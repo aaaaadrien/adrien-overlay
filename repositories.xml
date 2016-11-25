@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[adrien-overlay]]></name>
+    <description lang="en"><![CDATA[Adrien Overlay]]></description>
+    <homepage>https://github.com/aaaaadrien/adrien-overlay</homepage>
+    <owner type="person">
+      <email>webmaster@linuxtricks.fr</email>
+      <name><![CDATA[Adrien D]]></name>
+    </owner>
+    <source type="git">https://github.com/aaaaadrien/adrien-overlay.git</source>
+  </repo>
+</repositories>

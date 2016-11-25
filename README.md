@@ -2,7 +2,7 @@
 
 ## Install
 
-vi /etc/portage/repos.conf/adrien.conf
+vi /etc/portage/repos.conf/adrien-overlay.conf
 
 [adrien-overlay]
 location = /usr/local/overlay/adrien-overlay
