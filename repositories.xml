@@ -9,6 +9,6 @@
       <email>webmaster@linuxtricks.fr</email>
       <name><![CDATA[Adrien D]]></name>
     </owner>
-    <source type="git">https://github.com/aaaaadrien/adrien-overlay.git</source>
+    <source type="git">git://github.com/aaaaadrien/adrien-overlay.git</source>
   </repo>
 </repositories>
