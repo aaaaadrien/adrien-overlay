@@ -2,13 +2,6 @@
 
 ## Install
 
-vi /etc/portage/repos.conf/adrien-overlay.conf
-
-[adrien-overlay]
-location = /usr/local/overlay/adrien-overlay
-sync-type = git
-sync-uri = https://github.com/aaaaadrien/adrien-overlay.git
-auto-sync = yes
-
-
-mkdir -p /usr/local/overlay/adrien-overlay
+layman -o https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -f -a adrien-overlay
+layman-updater
+layman -a adrien-overlay
