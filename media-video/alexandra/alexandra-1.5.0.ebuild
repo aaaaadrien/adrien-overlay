@@ -50,7 +50,7 @@ install_locale() {
 
 src_install() {
 	#dobin ${PN}
-	emake DESTDIR="${D}" install
+	emake INSTALL_ROOT="${D}" install || die
 	domenu ${PN}.desktop
 	newicon icons/${PN}_64.png ${PN}.png
 	dodoc Changelog
