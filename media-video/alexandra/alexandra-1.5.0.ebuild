@@ -44,7 +44,7 @@ src_compile() {
 
 install_locale() {
 	insinto /usr/share/${PN}/translations
-	doins "${S}"/src/translations/${PN}_${1}.qm
+	doins "${S}"/src/translations/${PN}-${1}.qm
 	eend $? || die "failed to install $1 translation"
 }
 
