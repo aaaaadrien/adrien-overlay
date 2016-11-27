@@ -15,8 +15,6 @@ KEYWORDS="amd64 x86"
 LICENSE="GPL-2"
 SLOT="0"
 
-# Deps in makefile seemed to be -core, -network, -script, -gui, -webkit, but the
-# given packages seem to be deprecated...
 DEPEND="dev-qt/qtcore:5
 	dev-qt/qtgui:5
 	dev-qt/qtnetwork:5
@@ -29,30 +27,14 @@ DEPEND="dev-qt/qtcore:5
 
 RDEPEND="${DEPEND}"
 
-#gen_translation() {
-#	lrelease ${PN}-${1}.ts
-#	eend $? || die "failed to generate $1 translation"
-#}
-
 src_compile() {
 	eqmake5 ${PN}.pro
 	emake
-
-	cd "${S}"/lang
-#	l10n_for_each_locale_do gen_translation
 }
-
-#install_locale() {
-#	insinto /usr/share/${PN}/translations
-#	doins "${S}"/lang/${PN}-${1}.qm
-#	eend $? || die "failed to install $1 translation"
-#}
 
 src_install() {
 	#dobin ${PN}
 	emake INSTALL_ROOT="${D}" install || die
 	domenu linux/${PN}.desktop
 	doicon linux/${PN}.png
-
-#	l10n_for_each_locale_do install_locale
 }
