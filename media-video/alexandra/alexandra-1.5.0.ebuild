@@ -4,7 +4,7 @@
 
 EAPI=6
 
-PLOCALES="cs de fr"
+#PLOCALES="cs de fr"
 
 inherit qmake-utils l10n
 
@@ -29,31 +29,30 @@ DEPEND="dev-qt/qtcore:5
 
 RDEPEND="${DEPEND}"
 
-gen_translation() {
-	lrelease ${PN}-${1}.ts
-	eend $? || die "failed to generate $1 translation"
-}
+#gen_translation() {
+#	lrelease ${PN}-${1}.ts
+#	eend $? || die "failed to generate $1 translation"
+#}
 
 src_compile() {
 	eqmake5 ${PN}.pro
 	emake
 
 	cd "${S}"/lang
-	l10n_for_each_locale_do gen_translation
+#	l10n_for_each_locale_do gen_translation
 }
 
-install_locale() {
-	insinto /usr/share/${PN}/translations
-	doins "${S}"/src/translations/${PN}-${1}.qm
-	eend $? || die "failed to install $1 translation"
-}
+#install_locale() {
+#	insinto /usr/share/${PN}/translations
+#	doins "${S}"/lang/${PN}-${1}.qm
+#	eend $? || die "failed to install $1 translation"
+#}
 
 src_install() {
 	#dobin ${PN}
 	emake INSTALL_ROOT="${D}" install || die
 	domenu linux/${PN}.desktop
 	doicon linux/${PN}.png
-	dodoc Changelog
 
-	l10n_for_each_locale_do install_locale
+#	l10n_for_each_locale_do install_locale
 }
