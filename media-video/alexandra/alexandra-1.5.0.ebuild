@@ -51,8 +51,8 @@ install_locale() {
 src_install() {
 	#dobin ${PN}
 	emake INSTALL_ROOT="${D}" install || die
-	domenu ${PN}.desktop
-	newicon icons/${PN}_64.png ${PN}.png
+	domenu linux/${PN}.desktop
+	doicon linux/${PN}.png
 	dodoc Changelog
 
 	l10n_for_each_locale_do install_locale
