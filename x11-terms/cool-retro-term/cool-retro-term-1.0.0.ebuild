@@ -20,7 +20,7 @@ ${HOMEPAGE}/qmltermwidget/archive/v0.1.0.tar.gz -> qmltermwidget-0.1.0.tar.gz
 "
 LICENSE="GPL-2"
 
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="x86 amd64"
 
 DEPEND="
 	>=dev-qt/qtcore-5.3.1
