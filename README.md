@@ -2,8 +2,12 @@
 
 ## Install
 
-layman -o https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -f -a adrien-overlay
+### With "simple" portage :
 
-layman-updater
+Make sure /etc/portage/repos.conf directory exists and git installed.
 
-layman -a adrien-overlay
+*curl https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repo.conf -o /etc/portage/repos.conf/adrien-overlay.conf*
+
+### With Layman
+
+*layman -o https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -f -a adrien-overlay*
