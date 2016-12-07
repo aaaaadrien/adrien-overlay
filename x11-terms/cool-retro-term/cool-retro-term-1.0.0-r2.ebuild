@@ -23,6 +23,7 @@ DEPEND="
 	>=dev-qt/qtquickcontrols-5.3.1[widgets]
 	>=dev-qt/qtdeclarative-5.3.1[localstorage]
 	>=dev-qt/qtgraphicaleffects-5.3.1
+	dev-qt/qmltermwidget
 "
 src_prepare() {
 	sed -i '/qmltermwidget/d' ${PN}.pro
