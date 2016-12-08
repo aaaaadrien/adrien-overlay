@@ -9,7 +9,7 @@ HOMEPAGE="http://www.linuxtricks.fr"
 SRC_URI=""
 
 LICENSE=""
-SLOT="0"
+SLOT="1"
 KEYWORDS="amd64 x86"
 IUSE=""
 
