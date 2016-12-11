@@ -10,4 +10,8 @@ Make sure /etc/portage/repos.conf directory exists and git installed.
 
 ### With Layman
 
-*layman -o https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -f -a adrien-overlay*
+*curl https://github.com/aaaaadrien/adrien-overlay/blob/master/repositories.xml -o /etc/layman/overlays/adrien-overlay.xml*
+
+*layman -S*
+
+*layman -a adrien-overlay*
