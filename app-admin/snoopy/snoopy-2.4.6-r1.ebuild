@@ -34,11 +34,12 @@ src_install() {
 		emake DESTDIR="${D}" install
 	fi
 	einstalldocs
-	newinitd "${FILESDIR}/snoopy.initd" snoopy
+	#newinitd "${FILESDIR}/snoopy.initd" snoopy
 
 }
 
 pkg_postinst() {
-	einfo "To enable now, use /etc/init.d/snoopy start"
-	einfo "To enable at boot, use rc-update add snoopy"
+	einfo "To enable snoopy use snoopy-enable"
+	einfo "To disable snoopy use snoopy-disable"
+	einfo "All actions ars stored in auth.log file"
 }
