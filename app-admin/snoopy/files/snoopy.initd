@@ -1,0 +1,31 @@
+#!/sbin/openrc-run
+# Copyright (c) 2017 Adrien_D email@linuxtricks.fr
+
+description="OpenRC service for snoopy service"
+
+depend()
+{
+	after rsyslog
+}
+
+start()
+{
+	ebegin "Starting Snoopy"
+
+	/usr/sbin/snoopy-enable
+
+	eend ${has_errors}
+
+	return 0
+}
+
+stop()
+{
+	ebegin "Stopping Snoopy"
+
+	/usr/sbin/snoopy-sisable
+
+	eend ${has_errors}
+
+	return 0
+}
