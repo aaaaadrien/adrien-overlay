@@ -18,7 +18,7 @@ else
 	MY_P=${PN}-${MY_PV}
 
 	SRC_URI="https://github.com/mltframework/${PN}/archive/v${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="amd64 x86"
 fi
 
 LICENSE="GPL-3"
