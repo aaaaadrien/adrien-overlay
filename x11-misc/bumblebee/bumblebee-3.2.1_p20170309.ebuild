@@ -36,6 +36,7 @@ COMMON_DEPEND="
 RDEPEND="${COMMON_DEPEND}
 	virtual/opengl
 	x11-base/xorg-drivers[video_cards_nvidia?,video_cards_nouveau?]
+	x11-misc/virtualgl
 	bbswitch? ( sys-power/bbswitch )
 "
 
