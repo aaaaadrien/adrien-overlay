@@ -4,26 +4,18 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{4,5,6} )
+PYTHON_COMPAT=( python3_{3,4,5} )
 
 inherit distutils-r1
 
-DESCRIPTION="Tweak tool for MATE, a fork of MintDesktop"
+HASH="197ee3a56604"
+DESCRIPTION="MATE desktop tweak tool, a fork of mintDesktop"
 HOMEPAGE="https://launchpad.net/ubuntu/+source/mate-tweak"
+SRC_URI="https://launchpad.net/ubuntu/+archive/primary/+files/${PN}_${PV}.orig.tar.gz"
 
-if [[ ${PV} == *9999* ]];then
-	inherit git-r3
-	EGIT_REPO_URI="https://bitbucket.org/ubuntu-mate/mate-tweak"
-	KEYWORDS=""
-else
-	SRC_URI="https://bitbucket.org/ubuntu-mate/${PN}/get/${PV}.tar.bz2 -> ${P}.tar.bz2"
-	KEYWORDS="amd64 x86 arm"
-	S="${WORKDIR}/ubuntu-mate-${PN}-${HASH}"
-fi
-
-LICENSE="LGPL-2+"
+LICENSE="GPL-2+"
+KEYWORDS="~amd64"
 SLOT="0"
-IUSE="nls"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	sys-devel/gettext
@@ -41,3 +33,6 @@ RDEPEND="dev-libs/glib:2
 	x11-libs/gdk-pixbuf:2
 	x11-libs/gtk+:3
 	>=x11-libs/libnotify-0.7"
+
+S="${WORKDIR}/ubuntu-mate-${PN}-${HASH}"
+RESTRICT="mirror"
