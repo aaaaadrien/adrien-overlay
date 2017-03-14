@@ -14,7 +14,7 @@ HOMEPAGE="https://launchpad.net/ubuntu/+source/mate-tweak"
 SRC_URI="https://launchpad.net/ubuntu/+archive/primary/+files/${PN}_${PV}.orig.tar.gz"
 
 LICENSE="GPL-2+"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 SLOT="0"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
