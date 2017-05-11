@@ -36,9 +36,12 @@ src_install() {
 	dobin RosaImageWriter
 
 	#Ajout politique pour lancer en root le logiciel
-	cp ${FILESDIR}/RosaImageWriter.policy /usr/share/polkit-1/actions/RosaImageWriter.policy || die
+	insinto "/usr/share/polkit-1/actions"
+	newins ${FILESDIR}/RosaImageWriter.policy RosaImageWriter.policy
 
+	#Icone
 	newicon ${S}/res/icon-rosa.svg RosaImageWriter.svg
 
+	# menu
 	domenu ${FILESDIR}/RosaImageWriter.desktop
 }
