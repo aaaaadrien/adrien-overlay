@@ -34,4 +34,11 @@ src_compile() {
 src_install() {
 	#insinto /usr/bin
 	dobin RosaImageWriter
+
+	#Ajout politique pour lancer en root le logiciel
+	cp ${FILESDIR}/RosaImageWriter.policy /usr/share/polkit-1/actions/RosaImageWriter.policy || die
+
+	newicon ${S}/res/icon-rosa.svg RosaImageWriter.svg
+
+	domenu ${FILESDIR}/RosaImageWriter.desktop
 }
