@@ -12,24 +12,6 @@
         <message>Tool for writing ISO images to USB drive</message>
     <message xml:lang="ru">Утилита для записи дистрибутивов на USB диск</message>
     <message xml:lang="fr">Un outil pour écrire des images ISO sur une clé USB</message>
-    <message xml:lang="ast">Una ferramienta pa escribir imáxenes ISO nun llápiz USB</message>
-    <message xml:lang="cs">Nástroj pro zápis ISO obrazů na USB flash disk</message>
-    <message xml:lang="da">Et værktøj til at skrive ISO billeder på USB nøgler</message>
-    <message xml:lang="de">Ein Werkzeug, das ein ISO-Abbild auf einen USB-Stick schreibt</message>
-    <message xml:lang="el">Ένα εργαλείο εγγραφής εικόνων ISO σε ένα USB stick</message>
-    <message xml:lang="es">Una herramienta para grabar imágenes ISO en unidades USB extraíbles</message>
-    <message xml:lang="et">Tööriist ISO-tõmmiste kirjutamiseks USB-pulgale</message>
-    <message xml:lang="id">Alat untuk menulis image ISO ke USB</message>
-    <message xml:lang="it">Uno strumento per scrivere immagini ISO in una chiavetta USB</message>
-    <message xml:lang="nl">Een tool om ISO-images naar een USB-stick te schrijven</message>
-    <message xml:lang="pl">Narzędzie do zapisu obrazów ISO na pamięć USB</message>
-    <message xml:lang="pt">Uma ferramenta para a gravação de imagens ISO numa pen USB</message>
-    <message xml:lang="pt_BR">Ferramenta para transferir imagens ISO para pendrive</message>
-    <message xml:lang="ro">O unealtă pentru scrierea imaginilor ISO pe o cheie USB</message>
-    <message xml:lang="sl">Orodje za zapis odtisov diska na ključ USB</message>
-    <message xml:lang="sv">Ett verktyg för att skriva ISO-avbildningar till ett USB-minne</message>
-    <message xml:lang="tr">ISO imajlarını bir USB belleğe yazmak için geliştirilmiş bir araçtır</message>
-    <message xml:lang="uk">Програма для запису образів ISO на картку пам’яті USB</message>
     <icon_name>RosaImageWriter</icon_name>
     <defaults>
      <allow_any>no</allow_any>
