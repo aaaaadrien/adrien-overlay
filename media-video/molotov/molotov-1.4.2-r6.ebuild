@@ -39,8 +39,8 @@ src_install() {
 	newins ${DISTDIR}/${A} ${PN}
 	chmod +x ${D}/opt/${PN}/${PN}
 	
-	#doins ${FILESDIR}/${PN}-launcher.sh
-	#chmod +x ${D}/opt/${PN}/${PN}-launcher.sh
+	doins ${FILESDIR}/${PN}-launcher.sh
+	chmod +x ${D}/opt/${PN}/${PN}-launcher.sh
 
 # Les icones
 	for res in 16 24 32 48 64 96 128 256 512; do
