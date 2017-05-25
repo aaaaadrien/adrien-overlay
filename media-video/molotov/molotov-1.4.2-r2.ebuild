@@ -41,7 +41,7 @@ src_install() {
 
 # Les icones
 	for res in 16 24 32 48 64 96 128 256 512; do
-		doicon -s $res ${FILESDIR}/${PN}-$res.png
+		newicon -s $res ${FILESDIR}/${PN}-$res.png ${PN}.png
 	done
 
 # le menu
