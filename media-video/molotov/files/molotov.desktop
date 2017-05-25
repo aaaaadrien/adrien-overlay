@@ -1,11 +1,10 @@
 [Desktop Entry]
 Name=Molotov
 Comment=Molotov
-Exec="/opt/molotov/molotov" %U
+Exec="/opt/molotov/molotov-launcher.sh"
 Terminal=false
 Type=Application
 Icon=molotov
 MimeType=x-scheme-handler/molotov
 Categories=AudioVideo
-TryExec=/opt/molotov/molotov
 Name[fr_FR]=molotov
