@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Molotov
 Comment=Molotov
-Exec="/opt/molotov/molotov-launcher.sh"
+Exec="/opt/molotov/molotov"
 Terminal=false
 Type=Application
 Icon=molotov
