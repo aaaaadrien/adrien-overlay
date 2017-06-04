@@ -1,0 +1,19 @@
+diff --git a/steam/steam b/steam/steam
+index c1c8067..eaa6b09 100755
+--- a/steam
++++ b/steam
+@@ -3,6 +3,14 @@
+ # This is the Steam script that typically resides in /usr/bin
+ # It will create the Steam bootstrap if necessary and then launch steam.
+ 
++# Fix launch https://bbs.archlinux.org/viewtopic.php?id=219522
++if [[ $(arch) == "x86_64" ]]
++then
++	export LD_PRELOAD="/usr/lib32/libxcb.so.1" 
++else
++	export LD_PRELOAD="/usr/lib/libxcb.so.1" 
++fi
++
+ # Get the full name of this script
+ export STEAMSCRIPT="$(cd "${0%/*}" && echo "$PWD")/${0##*/}"
+ 

@@ -55,6 +55,7 @@ PATCHES=(
 	"${FILESDIR}"/steam-runtime-default.patch
 	"${FILESDIR}"/steam-set-distrib-release.patch
 	"${FILESDIR}"/steam-fix-joystick-detection.patch
+	"${FILESDIR}"/steam-fix-preload-libxcb.patch
 )
 
 pkg_setup() {
