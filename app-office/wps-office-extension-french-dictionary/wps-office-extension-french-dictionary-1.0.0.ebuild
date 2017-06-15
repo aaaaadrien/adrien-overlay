@@ -11,7 +11,7 @@ SRC_URI="http://wps-community.org/download/dicts/fr_FR.zip"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="app-office/wps-office"
