@@ -9,7 +9,7 @@ DESCRIPTION="Nous allons vous faire adorer la télé !"
 HOMEPAGE="https://www.molotov.tv"
 SRC_URI="https://desktop-auto-upgrade.s3.amazonaws.com/linux/${PV}/molotov"
 
-LICENSE=""
+LICENSE="molotov"
 SLOT="0"
 KEYWORDS="x86 amd64"
 IUSE=""
