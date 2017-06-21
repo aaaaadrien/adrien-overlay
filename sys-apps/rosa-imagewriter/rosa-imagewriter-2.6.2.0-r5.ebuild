@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit qmake-utils
+inherit eutils qmake-utils
 
 
 DESCRIPTION="ROSA Image Writer"
