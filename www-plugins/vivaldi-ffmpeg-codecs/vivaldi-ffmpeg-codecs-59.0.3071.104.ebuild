@@ -10,7 +10,7 @@ SRC_URI="http://repo.herecura.eu/herecura/x86_64/${P}-1-x86_64.pkg.tar.xz"
 
 LICENSE="LGPL2.1"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="www-client/vivaldi"
