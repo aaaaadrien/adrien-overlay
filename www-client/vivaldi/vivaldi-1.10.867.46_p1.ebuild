@@ -18,11 +18,15 @@ VIVALDI_HOME="opt/${VIVALDI_BIN}"
 DESCRIPTION="A new browser for our friends"
 HOMEPAGE="http://vivaldi.com/"
 VIVALDI_BASE_URI="https://downloads.vivaldi.com/${VIVALDI_BRANCH:-stable}/${VIVALDI_PN}_${PV/_p/-}_"
-SRC_URI="${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb"
+#SRC_URI="${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb"
+SRC_URI="
+	amd64? ( ${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb )
+	x86? ( ${VIVALDI_BASE_URI}i386.deb -> ${P}-i386.deb )
+"
 
 LICENSE="Vivaldi"
 SLOT="0"
-KEYWORDS="-* amd64"
+KEYWORDS="x86 amd64"
 
 RESTRICT="bindist mirror"
 
