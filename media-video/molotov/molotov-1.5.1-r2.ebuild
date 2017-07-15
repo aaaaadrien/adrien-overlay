@@ -11,7 +11,7 @@ SRC_URI="https://desktop-auto-upgrade.s3.amazonaws.com/linux/${PV}/molotov"
 
 LICENSE="molotov"
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""
