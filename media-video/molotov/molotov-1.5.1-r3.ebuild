@@ -5,7 +5,7 @@ EAPI=6
 
 inherit eutils
 
-DESCRIPTION="Nous allons vous faire adorer la télé !"
+DESCRIPTION="Nous allons vous faire adorer la tele !"
 HOMEPAGE="https://www.molotov.tv"
 SRC_URI="https://desktop-auto-upgrade.s3.amazonaws.com/linux/${PV}/molotov"
 
