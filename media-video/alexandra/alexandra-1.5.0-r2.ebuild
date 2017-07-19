@@ -21,6 +21,7 @@ DEPEND="dev-qt/qtcore:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtscript:5
 	dev-qt/qttranslations:5
+	dev-qt/linguist:5
 	media-libs/libmediainfo
 "
 
