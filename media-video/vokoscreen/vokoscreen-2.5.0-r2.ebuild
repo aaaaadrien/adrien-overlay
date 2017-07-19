@@ -22,6 +22,7 @@ DEPEND="dev-qt/qtcore:5
 	dev-qt/qtscript:5
 	dev-qt/qttranslations:5
 	dev-qt/linguist:5
+	dev-qt/qtx11extras:5
 	media-sound/pulseaudio
 "
 
