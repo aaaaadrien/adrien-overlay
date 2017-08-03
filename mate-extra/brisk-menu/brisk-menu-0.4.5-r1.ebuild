@@ -2,6 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
+inherit eutils
 
 DESCRIPTION="Modern, efficient menu for the MATE Desktop Environment."
 HOMEPAGE="https://github.com/solus-project/${PN}"
@@ -12,6 +13,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="mate-base/mate-desktop
-		mate-base/mate-panel"
+DEPEND=">=mate-base/mate-desktop-1.16
+		>=mate-base/mate-panel-1.16
+		>=x11-libs/gtk+-3.18"
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+	default_src_prepare
+	if [[ ! -e configure ]] ; then
+		./autogen.sh || die
+	fi
+}
+
+
