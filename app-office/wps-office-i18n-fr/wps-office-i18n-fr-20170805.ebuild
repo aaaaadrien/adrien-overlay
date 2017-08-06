@@ -31,3 +31,9 @@ src_install() {
 	insinto /opt/kingsoft/wps-office/office6/mui
 	doins -r ${S}/${P}/fr_FR
 }
+
+pkg_postinst() {
+	ewarn "READ THIS : "
+	ewarn "Please, uninstall this package with emerge -C ${PN} and install app-office/wps-office-i18n instead"
+	ewarn " ${PN} no longer maintened"
+}
