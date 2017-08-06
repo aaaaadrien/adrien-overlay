@@ -5,7 +5,7 @@ EAPI=6
 
 inherit git-r3 eutils l10n
 
-DESCRIPTION="French Language Pack"
+DESCRIPTION="Languages Pack for WPS Office"
 HOMEPAGE="https://github.com/wps-community/wps_i18n"
 EGIT_REPO_URI="https://github.com/wps-community/wps_i18n.git"
 
