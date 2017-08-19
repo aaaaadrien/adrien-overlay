@@ -21,11 +21,7 @@ RDEPEND="${DEPEND}"
 src_prepare() {
 	default_src_prepare
 	if [[ ! -e configure ]] ; then
-		./autogen.sh --prefix=/usr || die
+		./autogen.sh || die
 	fi
 
-}
-
-src_compile(){
-	emake INSTALL_ROOT="${D}" 
 }
