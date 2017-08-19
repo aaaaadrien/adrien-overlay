@@ -25,3 +25,11 @@ src_prepare() {
 	./autogen.sh
 
 }
+
+src_compile(){
+	emake INSTALL_ROOT="${D}"
+}
+
+src_install() {
+	emake DESTDIR="${D}" install
+}
