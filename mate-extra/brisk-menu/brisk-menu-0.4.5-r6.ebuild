@@ -19,7 +19,7 @@ DEPEND=">=mate-base/mate-desktop-1.16
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	default_src_prepare
+	#default_src_prepare
 	
 	cd ${S}
 	./autogen.sh
