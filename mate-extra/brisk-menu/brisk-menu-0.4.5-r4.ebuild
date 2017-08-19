@@ -20,8 +20,8 @@ RDEPEND="${DEPEND}"
 
 src_prepare() {
 	default_src_prepare
-	if [[ ! -e configure ]] ; then
-		./autogen.sh || die
-	fi
+	
+	cd ${S}
+	./autogen.sh
 
 }
