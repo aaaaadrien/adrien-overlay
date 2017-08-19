@@ -19,7 +19,7 @@ DEPEND=">=mate-base/mate-desktop-1.16
 RDEPEND="${DEPEND}"
 
 src_prepare() {
-	#default_src_prepare
+	default_src_prepare
 	
 	cd ${S}
 	./autogen.sh
@@ -33,3 +33,6 @@ src_compile(){
 src_install() {
 	emake DESTDIR="${D}" install
 }
+
+# Not Stable, error when added to panel. 
+# But no error if ./autogen.sh ; make ; make install in terminal....
