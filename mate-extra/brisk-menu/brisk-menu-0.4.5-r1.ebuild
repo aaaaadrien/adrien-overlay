@@ -23,6 +23,9 @@ src_prepare() {
 	if [[ ! -e configure ]] ; then
 		./autogen.sh --prefix=/usr || die
 	fi
+
 }
 
-
+src_compile(){
+	emake INSTALL_ROOT="${D}" 
+}
