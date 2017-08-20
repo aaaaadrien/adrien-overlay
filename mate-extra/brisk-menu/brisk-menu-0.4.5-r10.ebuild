@@ -20,20 +20,20 @@ RDEPEND="${DEPEND}"
 
 #src_prepare() {
 #	default_src_prepare
-#}	
+#}
 
 src_configure() {
-	cd ${S}
+	#cd ${S}
 	./autogen.sh
 }
 
-src_compile(){
-	emake INSTALL_ROOT="${D}"
-}
+#src_compile(){
+#	emake INSTALL_ROOT="${D}"
+#}
 
-src_install() {
-	emake DESTDIR="${D}" install
-}
+#src_install() {
+#	emake DESTDIR="${D}" install
+#}
 
 # Not Stable, error when added to panel. 
 # But no error if ./autogen.sh ; make ; make install in terminal....
