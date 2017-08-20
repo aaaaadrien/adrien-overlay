@@ -18,12 +18,13 @@ DEPEND=">=mate-base/mate-desktop-1.16
 		>=x11-libs/gtk+-3.18"
 RDEPEND="${DEPEND}"
 
-src_prepare() {
-	default_src_prepare
-	
+#src_prepare() {
+#	default_src_prepare
+#}	
+
+src_configure() {
 	cd ${S}
 	./autogen.sh
-
 }
 
 src_compile(){
