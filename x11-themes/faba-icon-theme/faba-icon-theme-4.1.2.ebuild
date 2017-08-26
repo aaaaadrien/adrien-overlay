@@ -10,8 +10,6 @@ DESCRIPTION="Faba is a sexy and modern icon theme with Tango influences. All var
 HOMEPAGE="http://snwh.org"
 SRC_URI="https://github.com/snwh/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="amd64 x86"
-RESTRICT="mirror"
-
 
 LICENSE="LGPL-3.0"
 SLOT="0"
