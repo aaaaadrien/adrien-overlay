@@ -6,7 +6,7 @@ EAPI=6
 inherit autotools gnome2-utils
 
 DESCRIPTION="Arc icon theme"
-HOMEPAGE="https://github.com/horst3180/${P}"
+HOMEPAGE="https://github.com/horst3180/${PN}"
 SRC_URI="https://github.com/horst3180/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
