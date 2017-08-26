@@ -14,9 +14,7 @@ SLOT="0"
 IUSE=""
 KEYWORDS="amd64 x86"
 
-RDEPEND="
-	x11-themes/moka-icon-theme
-"
+RDEPEND=""
 DEPEND=""
 
 # This ebuild does not install any binaries
