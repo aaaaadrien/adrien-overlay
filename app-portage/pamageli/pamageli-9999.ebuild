@@ -10,7 +10,7 @@ DESCRIPTION="PAckage MAnager for GEntoo LInux (and Calculate Linux)"
 HOMEPAGE="https://github.com/aaaaadrien/pamageli"
 
 if [[ ${PV} == "9999" ]]; then
-	EGIT_REPO_URI=${EGIT_REPO_URI:-"git://github.com/aaaaadrien/pamageli.git"}
+	EGIT_REPO_URI="https://github.com/aaaaadrien/pamageli.git"
 	inherit git-r3
 	KEYWORDS=""
 

@@ -105,3 +105,8 @@ src_install() {
 
 	fperms 4711 /${VIVALDI_HOME}/vivaldi-sandbox
 }
+
+pkg_postinst() {
+	einfo "If you want to install sime ffmpeg-codecs, install this package"
+	einfo "www-plugins/vivaldi-snapshot-ffmpeg-codecs"
+}
