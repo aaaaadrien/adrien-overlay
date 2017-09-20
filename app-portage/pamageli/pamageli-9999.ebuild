@@ -37,7 +37,7 @@ src_compile()
 src_install() {
 	dobin "bin/${PN}"
 	dobin "bin/${PN}-launcher-gui"
-	doicon "share/icons/${PN}.png"
+	doicon "share/icons/${PN}.svg"
 	domenu "share/applications/${PN}.desktop"
 	insinto /usr/share/pamageli/
 	for l in fr
