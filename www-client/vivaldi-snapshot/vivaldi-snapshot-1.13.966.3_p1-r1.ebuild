@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=5
 CHROMIUM_LANGS="
@@ -10,13 +9,10 @@ CHROMIUM_LANGS="
 "
 inherit chromium-2 eutils multilib unpacker toolchain-funcs
 
-VIVALDI_PN="${PN}-${VIVALDI_BRANCH:-stable}"
-VIVALDI_BIN="${PN}${VIVALDI_BRANCH/snapshot/-snapshot}"
-VIVALDI_HOME="opt/${VIVALDI_BIN}"
+VIVALDI_HOME="opt/${PN}"
 DESCRIPTION="A new browser for our friends"
 HOMEPAGE="http://vivaldi.com/"
-VIVALDI_BASE_URI="https://downloads.vivaldi.com/${VIVALDI_BRANCH:-stable}/${VIVALDI_PN}_${PV/_p/-}_"
-#SRC_URI="${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb"
+VIVALDI_BASE_URI="https://downloads.vivaldi.com/snapshot/${PN}_${PV/_p/-}_"
 SRC_URI="
 	amd64? ( ${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb )
 	x86? ( ${VIVALDI_BASE_URI}i386.deb -> ${P}-i386.deb )
@@ -24,11 +20,8 @@ SRC_URI="
 
 LICENSE="Vivaldi"
 SLOT="0"
-KEYWORDS="x86 amd64"
-
+KEYWORDS="amd64 x86"
 RESTRICT="bindist mirror"
-
-S=${WORKDIR}
 
 DEPEND="
 	virtual/libiconv
@@ -63,7 +56,6 @@ RDEPEND="
 	x11-libs/libXtst
 	x11-libs/pango[X]
 "
-
 QA_PREBUILT="*"
 S=${WORKDIR}
 
@@ -72,20 +64,15 @@ src_unpack() {
 }
 
 src_prepare() {
-	iconv -c -t UTF-8 usr/share/applications/${VIVALDI_PN}.desktop > "${T}"/${VIVALDI_PN}.desktop || die
-	mv "${T}"/${VIVALDI_PN}.desktop usr/share/applications/${VIVALDI_PN}.desktop || die
+	iconv -c -t UTF-8 usr/share/applications/${PN}.desktop > "${T}"/${PN}.desktop || die
+	mv "${T}"/${PN}.desktop usr/share/applications/${PN}.desktop || die
 
-	sed -i \
-		-e "s|${VIVALDI_BIN}|${PN}|g" \
-		usr/share/applications/${VIVALDI_PN}.desktop \
-		usr/share/xfce4/helpers/${VIVALDI_BIN}.desktop || die
-
-	mv usr/share/doc/${VIVALDI_PN} usr/share/doc/${PF} || die
+	mv usr/share/doc/${PN} usr/share/doc/${PF} || die
 	chmod 0755 usr/share/doc/${PF} || die
 
 	rm \
 		_gpgbuilder \
-		etc/cron.daily/${VIVALDI_BIN} \
+		etc/cron.daily/${PN} \
 		${VIVALDI_HOME}/libwidevinecdm.so \
 		|| die
 	rmdir \
@@ -98,23 +85,21 @@ src_prepare() {
 		mkdir -p usr/share/icons/hicolor/${d}x${d}/apps || die
 		cp \
 			${VIVALDI_HOME}/product_logo_${d}.png \
-			usr/share/icons/hicolor/${d}x${d}/apps/vivaldi.png || die
+			usr/share/icons/hicolor/${d}x${d}/apps/${PN}.png || die
 	done
 
 	pushd "${VIVALDI_HOME}/locales" > /dev/null || die
 	chromium_remove_language_paks
 	popd > /dev/null || die
 
+	epatch "${FILESDIR}"/${PN}-libffmpeg.patch
+
+	epatch_user
 }
 
 src_install() {
 	mv * "${D}" || die
 	dosym /${VIVALDI_HOME}/${PN} /usr/bin/${PN}
 
-	fperms 4711 /${VIVALDI_HOME}/${PN}-sandbox
-}
-
-pkg_postinst() {
-    einfo "If you want to install sime ffmpeg-codecs, install this package"
-    einfo "www-plugins/vivaldi-ffmpeg-codecs"
+	fperms 4711 /${VIVALDI_HOME}/vivaldi-sandbox
 }
