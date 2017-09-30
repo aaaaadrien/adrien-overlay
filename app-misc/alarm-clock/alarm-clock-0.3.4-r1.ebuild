@@ -17,7 +17,7 @@ DEPEND="dev-libs/glib
 	x11-libs/gtk+:2
 	gnome-base/gconf
 	x11-themes/gnome-icon-theme
-	media-libs/gstreamer:1
+	media-libs/gstreamer:1.0
 	x11-libs/libnotify
 	dev-libs/libxml2
 	dev-libs/libunique:1"
