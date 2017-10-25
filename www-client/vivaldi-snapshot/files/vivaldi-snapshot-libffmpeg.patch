@@ -1,5 +1,5 @@
---- a/opt/vivaldi-snapshot/vivaldi-snapshot
-+++ b/opt/vivaldi-snapshot/vivaldi-snapshot
+--- a/opt/vivaldi-snapshot/vivaldi-snapshot	2017-10-25 17:45:18.140038286 +0200
++++ b/opt/vivaldi-snapshot/vivaldi-snapshot	2017-10-25 17:46:20.948040436 +0200
 @@ -32,14 +32,14 @@
        # Chromium's FFMpeg version N-82746-g6bb7ea7 is the oldest known working version
        # chromium/third_party/ffmpeg/chromium/config/Chromium/linux/x64/libavutil/ffversion.h
@@ -18,10 +18,10 @@
      fi
    fi
 @@ -54,6 +54,7 @@
- # Check for libs in order that they are most likely to appear.
+ # Check for libs in preferred order.
  # Where possible, use other files/directories to confirm it's the correct variant.
  VIVALDI_FFMPEG_FOUND=NO
 +checkffmpeg "/usr/lib64/chromium/libffmpeg.so"
- checkffmpeg "/usr/lib/$DEBARCH/oxide-qt/libffmpeg.so" '/usr/share/doc/oxideqt-codecs-extra'
  checkffmpeg '/usr/lib/chromium-browser/libffmpeg.so' '/usr/share/doc/chromium-codecs-ffmpeg-extra'
- 
+ checkffmpeg "/usr/lib/$DEBARCH/oxide-qt/libffmpeg.so" '/usr/share/doc/oxideqt-codecs-extra'
+
