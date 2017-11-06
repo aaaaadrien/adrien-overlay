@@ -27,6 +27,7 @@ DEPEND="app-shells/bash
 		app-portage/eix
 		app-portage/portage-utils
 		app-portage/gentoolkit"
+#		dev-util/dialog"
 RDEPEND="${DEPEND}"
 
 src_compile()
