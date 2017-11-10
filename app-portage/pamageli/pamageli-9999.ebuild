@@ -36,13 +36,13 @@ src_compile()
 }
 
 src_install() {
-	dobin "bin/${PN}"
-	dobin "bin/${PN}-launcher-gui"
-	doicon "share/icons/${PN}.svg"
-	domenu "share/applications/${PN}.desktop"
+	dobin "usr/bin/${PN}"
+	dobin "usr/bin/${PN}-launcher-gui"
+	doicon "usr/share/icons/${PN}.svg"
+	domenu "usr/share/applications/${PN}.desktop"
 	insinto /usr/share/pamageli/
 	for l in fr
 	do
-		doins share/pamageli/$l.lang
+		doins usr/share/pamageli/$l.lang
 	done
 }
