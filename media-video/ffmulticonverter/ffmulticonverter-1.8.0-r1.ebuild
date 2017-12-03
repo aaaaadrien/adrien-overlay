@@ -4,7 +4,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_4 )
+PYTHON_COMPAT=( python3_{4,5,6} )
 
 inherit eutils distutils-r1
 
@@ -19,7 +19,7 @@ KEYWORDS="x86 amd64"
 
 IUSE="ffmpeg libav imagemagick unoconv"
 
-DEPEND="dev-lang/python:3.4
+DEPEND="dev-lang/python
 	dev-python/PyQt5
 	ffmpeg? ( media-video/ffmpeg )
 	libav? ( media-video/libav )
@@ -27,6 +27,3 @@ DEPEND="dev-lang/python:3.4
 	unoconv? ( app-office/unoconv )"
 RDEPEND="${DEPEND}"
 
-python_install_all() {
-	distutils-r1_python_install_all
-}
