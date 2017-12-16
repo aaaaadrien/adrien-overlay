@@ -7,7 +7,7 @@ diff -Naur a/steam b/steam
  
 +# A libpcre.so.3 symlink to libpcre.so.1 is installed here. It's
 +# needed by some games when not using the Steam runtime.
-+export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}@@DEBIAN_COMPAT@@"
++#export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}@@DEBIAN_COMPAT@@"
 +
 +# Steam appends /usr/lib32 to LD_LIBRARY_PATH. We need to make sure that
 +# OpenGL implementation dir goes before that, so we need to append it
