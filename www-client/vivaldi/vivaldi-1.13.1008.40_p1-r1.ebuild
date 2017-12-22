@@ -20,7 +20,7 @@ VIVALDI_BASE_URI="https://downloads.vivaldi.com/${VIVALDI_BRANCH:-stable}/${VIVA
 SRC_URI="
 	amd64? ( ${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb )
 	x86? ( ${VIVALDI_BASE_URI}i386.deb -> ${P}-i386.deb )
-	arm64? ( ${VIVALDI_BASE_URI}armhf.deb -> ${P}-armhf.deb )
+	arm? ( ${VIVALDI_BASE_URI}armhf.deb -> ${P}-armhf.deb )
 "
 
 LICENSE="Vivaldi"
