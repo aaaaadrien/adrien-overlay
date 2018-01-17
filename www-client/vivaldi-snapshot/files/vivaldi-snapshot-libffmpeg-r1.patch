@@ -4,8 +4,8 @@
        # Chromium's FFMpeg version N-82746-g6bb7ea7 is the oldest known working version
        # chromium/third_party/ffmpeg/chromium/config/Chromium/linux/x64/libavutil/ffversion.h
        if [ -r "$1" ]; then
--        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "82746" ]; then
-+#        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "82746" ]; then
+-        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "89284" ]; then
++#        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "89284" ]; then
            if [[ -n "$LD_PRELOAD" ]]; then
              export LD_PRELOAD="$LD_PRELOAD:$1"
            else
