@@ -93,7 +93,7 @@ src_prepare() {
 	chromium_remove_language_paks
 	popd > /dev/null || die
 
-	epatch "${FILESDIR}"/${PN}-libffmpeg-r1.patch
+	epatch "${FILESDIR}"/${PN}-libffmpeg-r2.patch
 
 	epatch_user
 }
