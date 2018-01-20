@@ -14,7 +14,7 @@ SRC_URI="http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu/pool/main/c/c
 
 LICENSE="LGPL2.1"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="www-client/vivaldi-snapshot"
