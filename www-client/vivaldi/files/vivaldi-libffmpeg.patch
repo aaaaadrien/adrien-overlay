@@ -1,22 +1,5 @@
---- a/opt/vivaldi/vivaldi	2017-10-25 17:45:18.140038286 +0200
-+++ b/opt/vivaldi/vivaldi	2017-10-25 17:46:20.948040436 +0200
-@@ -32,14 +32,14 @@
-       # Chromium's FFMpeg version N-82746-g6bb7ea7 is the oldest known working version
-       # chromium/third_party/ffmpeg/chromium/config/Chromium/linux/x64/libavutil/ffversion.h
-       if [ -r "$1" ]; then
--        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "82746" ]; then
-+#        if [ `grep -aom1 'FFmpeg version N-[0-9]\+-' "$1" | cut -f2 -d-` -ge "82746" ]; then
-           if [[ -n "$LD_PRELOAD" ]]; then
-             export LD_PRELOAD="$LD_PRELOAD:$1"
-           else
-             export LD_PRELOAD="$1"
-           fi
-           export VIVALDI_FFMPEG_FOUND=YES
--        fi
-+#        fi
-       fi
-     fi
-   fi
+--- a/opt/vivaldi/vivaldi	2018-01-20 23:59:18.140038286 +0200
++++ b/opt/vivaldi/vivaldi	2018-01-20 23:59:20.948040436 +0200
 @@ -54,6 +54,7 @@
  # Check for libs in preferred order.
  # Where possible, use other files/directories to confirm it's the correct variant.
