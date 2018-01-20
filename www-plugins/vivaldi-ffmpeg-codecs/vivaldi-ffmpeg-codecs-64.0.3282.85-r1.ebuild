@@ -6,14 +6,15 @@ EAPI=5
 
 inherit eutils unpacker
 
-DESCRIPTION="Additional proprietary codecs for Vivaldi web browser, stable release."
+DESCRIPTION="Additional proprietary codecs for Vivaldi web browser, snapshot release."
 HOMEPAGE="http://www.vivaldi.net"
-UBUNTU_VER="0ubuntu0.17.04.1371"
-SRC_URI="http://security.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-codecs-ffmpeg-extra_${PV}-${UBUNTU_VER}_amd64.deb"
+UBUNTU_VER="0ubuntu1~ppa2~16.04.1"
+SRC_URI="http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu/pool/main/c/chromium-browser/chromium-codecs-ffmpeg-extra_${PV}-${UBUNTU_VER}_amd64.deb"
+
 
 LICENSE="LGPL2.1"
 SLOT="0"
-KEYWORDS="**"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="www-client/vivaldi"
