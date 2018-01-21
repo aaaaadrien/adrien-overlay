@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit autotools
+inherit ninja-utils meson
 
 DESCRIPTION="Modern, efficient menu for the MATE Desktop Environment."
 HOMEPAGE="https://github.com/solus-project/${PN}"
@@ -15,14 +15,8 @@ IUSE=""
 
 DEPEND=">=mate-base/mate-desktop-1.16
 		>=mate-base/mate-panel-1.16
-		>=x11-libs/gtk+-3.18"
+		>=x11-libs/gtk+-3.18
+		dev-util/ninja
+		>=dev-util/meson-0.40.0"
 RDEPEND="${DEPEND}"
 
-src_prepare() {
-	default
-	eautoreconf
-}
-
-src_configure() {
-	econf
-}
