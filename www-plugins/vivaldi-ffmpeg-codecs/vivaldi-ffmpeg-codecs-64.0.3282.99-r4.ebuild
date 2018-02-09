@@ -8,8 +8,7 @@ inherit eutils unpacker
 
 DESCRIPTION="Additional proprietary codecs for Vivaldi web browser, snapshot release."
 HOMEPAGE="http://www.vivaldi.net"
-UBUNTU_VER="0ubuntu1~ppa1~16.04.1"
-SRC_URI="http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu/pool/main/c/chromium-browser/chromium-codecs-ffmpeg-extra_${PV}-${UBUNTU_VER}_amd64.deb"
+SRC_URI="https://github.com/aaaaadrien/adrien-overlay/blob/c02c7aa2109de7c9f733643c0748c6e49ab5f398/www-plugins/vivaldi-ffmpeg-codecs/files/chromium-codecs-ffmpeg-extra_${PV}-0ubuntu1~ppa1~16.04.1_i386.deb"
 
 
 LICENSE="LGPL2.1"
