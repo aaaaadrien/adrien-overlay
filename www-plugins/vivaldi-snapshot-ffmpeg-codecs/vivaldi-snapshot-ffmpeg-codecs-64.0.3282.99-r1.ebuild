@@ -14,7 +14,7 @@ SRC_URI="http://ppa.launchpad.net/saiarcot895/chromium-beta/ubuntu/pool/main/c/c
 
 LICENSE="LGPL2.1"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="**"
 IUSE=""
 
 DEPEND="www-client/vivaldi-snapshot"
@@ -31,3 +31,5 @@ src_install() {
    mkdir -p ${D}/opt/vivaldi-snapshot/
    cp ${S}/usr/lib/chromium-browser/libffmpeg.so ${D}/opt/vivaldi-snapshot/libffmpeg.so
 }
+
+
