@@ -12,7 +12,9 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="net-misc/wget
+		app-shells/bash
+		app-arch/tar"
 RDEPEND="${DEPEND}"
 
 src_install() {
