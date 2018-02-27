@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=AnyDesk
+GenericName=AnyDesk
+GenericName[fr]=AnyDesk
+Comment=Votre bureau. Toujours là et Partout
+Comment[fr]=Votre bureau. Toujours là et Partout
+Exec=anydesk
+Icon=anydesk.svg
+Terminal=false
+Type=Application
+Categories=Network;
