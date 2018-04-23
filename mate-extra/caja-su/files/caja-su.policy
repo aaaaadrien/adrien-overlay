@@ -9,7 +9,7 @@
 
  <action id="org.mate.caja-su.pkexec.run">
     <description>Run caja in su</description>
-    <message>Enter root password</message>
+    <message>Launch Caja file manager in Super User mode ! WARNING ! BE CAREFUL !</message>
     <icon_name>caja</icon_name>
     <defaults>
      <allow_any>no</allow_any>
