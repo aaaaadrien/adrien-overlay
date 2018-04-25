@@ -25,7 +25,7 @@ SRC_URI="
 
 LICENSE="Vivaldi"
 SLOT="0"
-KEYWORDS="amd64 x86 arm64"
+KEYWORDS="amd64 x86 armhf"
 RESTRICT="bindist mirror"
 
 DEPEND="
