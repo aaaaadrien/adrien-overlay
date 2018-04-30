@@ -19,4 +19,3 @@ DEPEND=">=mate-base/mate-desktop-1.16
 		dev-util/ninja
 		>=dev-util/meson-0.40.0"
 RDEPEND="${DEPEND}"
-
