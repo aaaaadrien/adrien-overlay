@@ -15,3 +15,9 @@ Make sure /etc/portage/repos.conf directory exists and git installed.
 *layman -S*
 
 *layman -a adrien-overlay*
+
+## Note for Calculate Linux
+
+To enable updates from my overlay, set to ON the cl_update_other_set with
+
+*cl-core-variables --set update.cl_update_other_set=on*
