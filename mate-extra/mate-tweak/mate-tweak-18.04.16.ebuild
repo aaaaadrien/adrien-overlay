@@ -8,8 +8,8 @@ PYTHON_COMPAT=( python3_{4,5,6} )
 inherit distutils-r1
 
 DESCRIPTION="MATE desktop tweak tool, a fork of mintDesktop"
-HOMEPAGE="http://git.mate-desktop.org/mate-tweak/"
-SRC_URI="http://git.mate-desktop.org/${PN}/snapshot/${P}.tar.xz"
+HOMEPAGE="https://github.com/ubuntu-mate/${PN}"
+SRC_URI="https://github.com/ubuntu-mate/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
 KEYWORDS="x86 amd64 arm"
