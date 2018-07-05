@@ -16,8 +16,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="x11-libs/gtk+:2"
-RDEPEND="${DEPEND}
-	x11-themes/gnome-icon-theme"
+RDEPEND="${DEPEND}"
 
 S=${WORKDIR}/${P}
 
