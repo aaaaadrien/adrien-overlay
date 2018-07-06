@@ -7,7 +7,7 @@ inherit eutils
 
 DESCRIPTION="Nous allons vous faire adorer la tele !"
 HOMEPAGE="https://www.molotov.tv"
-SRC_URI="https://desktop-auto-upgrade.s3.amazonaws.com/linux/${PV}/molotov"
+SRC_URI="http://desktop-auto-upgrade.molotov.tv/linux/${PV}/molotov.AppImage"
 
 LICENSE="molotov"
 SLOT="0"
