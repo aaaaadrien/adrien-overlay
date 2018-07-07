@@ -53,3 +53,4 @@ src_install() {
 	domenu ${FILESDIR}/${PN}.desktop
 }
 
+# Note pour le package et regen du Manifest : sudo rm /var/calculate/remote/distfiles/molotov
