@@ -15,7 +15,11 @@ SRC_URI="
 LICENSE=""
 SLOT="0"
 KEYWORDS="x86 amd64"
+
+QA_PREBUILT="usr/bin/anydesk"
+
 IUSE=""
+
 
 DEPEND="x11-libs/gtkglext"
 RDEPEND="${DEPEND}"
