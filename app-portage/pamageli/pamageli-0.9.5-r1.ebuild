@@ -45,4 +45,8 @@ src_install() {
 	do
 		doins usr/share/pamageli/$l.lang
 	done
+	
+	# Fichiers de config
+	insinto /etc/pamageli
+	doins etc/pamageli/pamageli.conf.default
 }
