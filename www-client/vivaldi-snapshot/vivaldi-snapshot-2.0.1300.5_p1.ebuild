@@ -16,12 +16,12 @@ VIVALDI_BASE_URI="https://downloads.vivaldi.com/snapshot/${PN}_${PV/_p/-}_"
 SRC_URI="
 	amd64? ( ${VIVALDI_BASE_URI}amd64.deb -> ${P}-amd64.deb )
 	x86? ( ${VIVALDI_BASE_URI}i386.deb -> ${P}-i386.deb )
-	arm? ( ${VIVALDI_BASE_URI}armhf.deb -> ${P}-armhf.deb )
+	arm64? ( ${VIVALDI_BASE_URI}arm64.deb -> ${P}-arm64.deb )
 "
 
 LICENSE="Vivaldi"
 SLOT="0"
-KEYWORDS="amd64 x86 armhf"
+KEYWORDS="amd64 x86 arm64"
 RESTRICT="bindist mirror"
 
 DEPEND="
@@ -103,4 +103,9 @@ src_install() {
 	dosym /${VIVALDI_HOME}/${PN} /usr/bin/${PN}
 
 	fperms 4711 /${VIVALDI_HOME}/vivaldi-sandbox
+}
+
+pkg_postinst() {
+	ewarn "If you want to add ffmpeg support, plsease, install www-misc/get-ffmpeg-vivaldi from adrien-overlay"
+	ewarn "And install the ffmpeg codec with *get-ffmpeg-vivaldi snapshot*"
 }
