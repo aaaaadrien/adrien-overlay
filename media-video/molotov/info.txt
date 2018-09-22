@@ -1,0 +1,1 @@
+sudo rm /var/calculate/remote/distfiles/molotov.AppImage
