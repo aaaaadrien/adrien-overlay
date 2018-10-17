@@ -17,7 +17,7 @@ KEYWORDS="amd64 arm x86"
 # help. https://github.com/horst3180/arc-theme/pull/436
 DEPEND="virtual/pkgconfig"
 
-RDEPEND=""
+RDEPEND="!x11-themes/arc-theme"
 
 src_prepare() {
 	default
