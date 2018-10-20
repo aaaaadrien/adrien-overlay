@@ -18,6 +18,7 @@ IUSE="doc"
 
 DEPEND="media-gfx/imagemagick
 	>=dev-util/intltool-0.25
+	sys-devel/autoconf-archive
 	>=gnome-extra/nemo-${PV}[introspection]"
 RDEPEND="${DEPEND}"
 
