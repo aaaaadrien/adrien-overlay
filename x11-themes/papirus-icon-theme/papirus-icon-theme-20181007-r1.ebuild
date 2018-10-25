@@ -16,13 +16,10 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 
-# Adrien modif pour ajouter le bon icon de menu
 src_prepare() {
 	default_src_prepare
-	local res x
-	for x in ePapirus Papirus Papirus-Adapta Papirus-Adapta-Nokto Papirus-Dark Papirus-Light; do
-		cp -f ${S}/Papirus/48x48/apps/distributor-logo-gentoo.svg  ${S}/"${x}"/symbolic/places/start-here-symbolic.svg || die
-	done
+	# Adrien modif pour ajouter le bon icon de menu
+	cp -f ${S}/Papirus/48x48/apps/distributor-logo-gentoo.svg  ${S}/Papirus/16x16/panel/start-here.svg || die
 }
 
 src_install() {
