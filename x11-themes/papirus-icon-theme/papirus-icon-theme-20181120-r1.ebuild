@@ -24,7 +24,7 @@ src_prepare() {
 
 src_install() {
 	insinto /usr/share/icons
-	doins -r {ePapirus,Papirus,Papirus-Adapta,Papirus-Adapta-Nokto,Papirus-Dark,Papirus-Light} || die
+	doins -r {ePapirus,Papirus,Papirus-Dark,Papirus-Light} || die
 }
 
 pkg_preinst() { gnome2_icon_savelist; }
