@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/NicoHood/arc-theme"
 SRC_URI="https://github.com/NicoHood/${PN}/releases/download/${PV}/${P}.tar.xz"
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~x86"
+KEYWORDS="amd64 arm x86"
 IUSE="cinnamon gnome-shell +gtk2 +gtk3 mate xfce"
 
 # Supports various GTK+3 versions and uses pkg-config to determine which
