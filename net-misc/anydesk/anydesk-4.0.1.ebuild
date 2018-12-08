@@ -27,5 +27,10 @@ RDEPEND="${DEPEND}"
 src_install() {
 	dobin anydesk 
 	domenu ${FILESDIR}/AnyDesk.desktop
-	doicon icons/scalable/apps/${PN}.svg
+	doicon icons/hicolor/scalable/apps/${PN}.svg
+
+	# New policykit test adrien
+	insinto "/usr/share/polkit-1/actions"
+	newins polkit-1/com.philandro.anydesk.policy com.philandro.anydesk.policy
+
 }
