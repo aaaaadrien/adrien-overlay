@@ -20,6 +20,7 @@ src_prepare() {
 	default_src_prepare
 	# Adrien modif pour ajouter le bon icon de menu
 	cp -f ${S}/Papirus/48x48/apps/distributor-logo-gentoo.svg  ${S}/Papirus/16x16/panel/start-here.svg || die
+	cp -f ${S}/Papirus/48x48/apps/distributor-logo-gentoo.svg  ${S}/Papirus/22x22/panel/start-here.svg || die
 }
 
 src_install() {
