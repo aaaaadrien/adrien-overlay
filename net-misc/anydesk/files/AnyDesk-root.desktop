@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=AnyDesk (Root)
+GenericName=AnyDesk (Root)
+GenericName[fr]=AnyDesk (Super utilisateur)
+Comment=Votre bureau. Toujours là et Partout
+Comment[fr]=Votre bureau. Toujours là et Partout
+Exec=pkexec anydesk
+Icon=anydesk.svg
+Terminal=false
+Type=Application
+Categories=Network;

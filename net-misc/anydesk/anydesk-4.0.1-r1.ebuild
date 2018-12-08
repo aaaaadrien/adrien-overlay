@@ -27,6 +27,7 @@ RDEPEND="${DEPEND}"
 src_install() {
 	dobin anydesk 
 	domenu ${FILESDIR}/AnyDesk.desktop
+	domenu ${FILESDIR}/AnyDesk-root.desktop
 	doicon icons/hicolor/scalable/apps/${PN}.svg
 
 	# New policykit test adrien
