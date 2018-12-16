@@ -9,7 +9,7 @@ DESCRIPTION="Powerful yet simple to use screenshot software"
 HOMEPAGE="http://github.com/lupoDharkael/flameshot"
 
 SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-KEYWORDS="~x86 ~amd64 ~arm"
+KEYWORDS="x86 amd64 arm"
 
 LICENSE="GPL-3"
 SLOT="0"
