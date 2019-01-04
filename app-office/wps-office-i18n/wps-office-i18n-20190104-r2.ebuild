@@ -10,7 +10,7 @@ HOMEPAGE="https://github.com/wps-community/wps_i18n"
 EGIT_REPO_URI="https://github.com/wps-community/wps_i18n.git"
 
 #prévoir des USE pour plusieurs langues + paquet générique
-LANGS=" ar bn_BD ca_ES cs_CZ de_DE es es_ES es_PE fr_FR gl_ES hu_HU it_IT ja_JP ko_KR nl pl_PL pt_BR pt_PT ro_RO ru_RU sk tr_TR uk_UA zh_CN zh_TW"
+LANGS=" ar bn_BD ca_ES cs_CZ de_DE es es_ES es_PE fr_FR gl_ES hu_HU it_IT ja_JP ko_KR nl pl_PL pt_BR pt_PT ro_RO ru_RU sk tr_TR uk_UA zh_TW"
 
 LICENSE="WPS-EULA"
 SLOT="0"
