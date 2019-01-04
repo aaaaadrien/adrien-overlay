@@ -3,7 +3,7 @@
 
 EAPI=6
 
-MY_COMMIT="803a4595658f28decd236c6f8660841abc336cea"
+MY_COMMIT="b8dc62a9e85bdfdff50bd1b3773343689fcffd1e"
 # ^^ because upstream refuses to tag commits with version numbers
 # 2.3.56 is the last version with no tagged release.
 # It is also the last bash-based release.
@@ -14,7 +14,7 @@ SRC_URI="https://github.com/smxi/${PN}/tarball/${MY_COMMIT} -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
+KEYWORDS="amd64 arm ppc ppc64 x86"
 IUSE="bluetooth hddtemp opengl"
 
 DEPEND=""
