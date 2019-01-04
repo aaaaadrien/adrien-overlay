@@ -17,7 +17,9 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 #IUSE="l10n_ar l10n_bn_BD l10n_ca_ES l10n_cs_CZ l10n_de_DE l10n_en_US l10n_es l10n_es_ES l10n_es_PE l10n_fr_FR l10n_gl_ES l10n_hu_HU l10n_it_IT l10n_ja_JP l10n_ko_KR l10n_nl l10n_pl_PL l10n_pt_BR l10n_pt_PT l10n_ro_RO l10n_ru_RU l10n_sk l10n_tr_TR l10n_uk_UA l10n_zh_CN l10n_zh_TW"
 
-DEPEND="app-office/wps-office"
+DEPEND="app-office/wps-office
+		dev-qt/qtcore:5
+		dev-qt/linguist:5"
 RDEPEND="${DEPEND}"
 
 S=${WORKDIR}
