@@ -3,7 +3,7 @@
 
 EAPI=7
 
-DESCRIPTION="Polices MS Office 2007 (Calibri, Cambria, Candara, Consola, Constan, Corbel)"
+DESCRIPTION="Polices MS Office 2007 (Calibri, Cambria, Candara, Consolas, Constantia, Corbel)"
 HOMEPAGE="https://www.microsoft.com"
 SRC_URI=""
 
