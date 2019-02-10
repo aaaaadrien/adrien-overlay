@@ -9,8 +9,8 @@ EAPI=6
 inherit qmake-utils l10n
 
 DESCRIPTION="Small, fast, but powerful video library, written in C++ with Qt5."
-HOMEPAGE="https://github.com/jeka-js/alexandra"
-SRC_URI="https://github.com/jeka-js/alexandra/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/eugene-melnik/alexandra"
+SRC_URI="https://github.com/eugene-melnik/alexandra/archive/${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="amd64 x86"
 LICENSE="GPL-2"
 SLOT="0"
