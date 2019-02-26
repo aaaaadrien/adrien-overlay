@@ -13,6 +13,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="sys-block/partclone
+sys-apps/drbl
 		sys-fs/ntfs3g
 		sys-block/partimage
 		app-arch/pigz
