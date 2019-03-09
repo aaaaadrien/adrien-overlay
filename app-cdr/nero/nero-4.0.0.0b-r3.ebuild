@@ -58,6 +58,9 @@ src_install() {
 	insinto /etc
 	doins -r etc/nero
 
+	insinto /etc/modules-load.d
+	newins ${FILESDIR}/nero.conf
+
 	insinto /opt/nero
 	doins -r usr/$(get_libdir)
 	dosym /opt/nero/$(get_libdir)/nero /usr/$(get_libdir)/nero
