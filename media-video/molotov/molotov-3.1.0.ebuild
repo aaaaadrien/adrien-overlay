@@ -12,6 +12,9 @@ SRC_URI="http://desktop-auto-upgrade.molotov.tv/linux/${PV}/molotov.AppImage"
 LICENSE="molotov"
 SLOT="0"
 KEYWORDS="amd64"
+
+QA_PREBUILT="opt/molotov/molotov"
+
 IUSE=""
 
 DEPEND=""
