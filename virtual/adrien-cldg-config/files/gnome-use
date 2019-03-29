@@ -6,3 +6,4 @@ gnome-base/gdm elogind
 gnome-base/gnome-settings-daemon elogind
 sys-auth/pambase elogind
 gnome-base/gnome-control-center elogind
+gnome-base/gnome-shell elogind
