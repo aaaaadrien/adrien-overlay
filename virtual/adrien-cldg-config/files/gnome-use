@@ -1,0 +1,8 @@
+net-libs/libsoup vala
+gnome-base/librsvg vala
+x11-libs/gtksourceview vala
+app-crypt/libsecret vala
+gnome-base/gdm elogind
+gnome-base/gnome-settings-daemon elogind
+sys-auth/pambase elogind
+gnome-base/gnome-control-center elogind
