@@ -21,9 +21,9 @@ S="${WORKDIR}"
 src_install() {
 	insinto /etc/portage/package.keywords
 	doins ${FILESDIR}/gnome-keywords
-	doins ${FILESDIR}/gnome-cls-keywords
 	insinto /etc/portage/package.use
 	doins ${FILESDIR}/gnome-use
+	doins ${FILESDIR}/gnome-cls-use
 }
 
 pkg_postinst() {
