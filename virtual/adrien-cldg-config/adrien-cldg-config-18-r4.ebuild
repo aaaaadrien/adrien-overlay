@@ -4,7 +4,7 @@
 
 EAPI=6
 
-DESCRIPTION="Package to install correct profile for CLDG experimental ISO"
+DESCRIPTION="EXPERIMENTAL !! Package to install files for CLDG ISO (from CLS) by Adrien.D"
 HOMEPAGE="http://www.linuxtricks.fr"
 SRC_URI=""
 
@@ -21,6 +21,14 @@ S="${WORKDIR}"
 src_install() {
 	insinto /etc/portage/package.keywords
 	doins ${FILESDIR}/gnome-keywords
+	doins ${FILESDIR}/gnome-cls-keywords
 	insinto /etc/portage/package.use
 	doins ${FILESDIR}/gnome-use
 }
+
+pkg_postinst() {
+	ewarn "If you use CLS, to install GNOME as CLDG ISO, you can emerge this packages"
+	ewarn "emerge -a gnome-shell gnome-core-apps gnome-shell-extensions gnome-terminal nautilus"
+	ewarn "For extra apps such as games : emerge -a gnome-base/gnome-extra-apps"
+}
+
