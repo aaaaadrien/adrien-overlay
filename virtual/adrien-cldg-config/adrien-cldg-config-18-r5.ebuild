@@ -24,6 +24,8 @@ src_install() {
 	insinto /etc/portage/package.use
 	doins ${FILESDIR}/gnome-use
 	doins ${FILESDIR}/gnome-cls-use
+	insinto /etc/portage/make.conf
+	doins ${FILESDIR}/gnome-makeconf
 }
 
 pkg_postinst() {
