@@ -86,3 +86,6 @@ dev-libs/folks
 dev-util/gdbus-codegen
 
 sys-auth/elogind
+
+gnome-extra/gnome-shell-extension-desktop-icons
+gnome-extra/gnome-shell-extension-dash-to-panel
