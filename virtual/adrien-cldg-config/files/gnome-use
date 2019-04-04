@@ -13,3 +13,4 @@ gnome-base/gvfs elogind
 sys-fs/udisks elogind
 sys-apps/accountsservice elogind
 net-misc/networkmanager -consolekit elogind
+media-sound/pulseaudio elogind
