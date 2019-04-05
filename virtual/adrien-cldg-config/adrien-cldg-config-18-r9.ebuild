@@ -27,7 +27,7 @@ src_install() {
 	#insinto /etc/portage/make.conf
 	#doins ${FILESDIR}/gnome-makeconf
 	insinto /etc/profile.d
-	dobin ${FILESDIR}/gnome-keyboard.sh
+	doins ${FILESDIR}/gnome-keyboard.sh
 }
 
 pkg_postinst() {
