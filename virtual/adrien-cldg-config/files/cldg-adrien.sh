@@ -10,11 +10,10 @@ then
 fi
 
 # Background
-B=$(gsettings get org.gnome.desktop.background picture-uri)
-if [[ "$B" == "'file:///usr/share/backgrounds/gnome/adwaita-timed.xml'" ]]
-then
-	gsettings set org.gnome.desktop.background picture-uri "'file:///usr/share/themes/Calculate/wallpaper.jpg'"
-fi
+gsettings set org.gnome.desktop.background picture-uri "'file:///usr/share/themes/Calculate/wallpaper.jpg'"
+
+#Theme
+gsettings set org.gnome.desktop.interface gtk-theme "Calculate"
 
 # Some things if in live CD
 root=$(df / | tail -1 | awk '{ print $1}')
