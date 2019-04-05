@@ -13,5 +13,8 @@ fi
 B=$(gsettings get org.gnome.desktop.background picture-uri)
 if [[ "$B" == "'file:///usr/share/backgrounds/gnome/adwaita-timed.xml'" ]]
 then
-	gsettings set org.gnome.desktop.background picture-uri "'file://usr/share/themes/Calculate/wallpaper.jpg'"
+	gsettings set org.gnome.desktop.background picture-uri "'file:///usr/share/themes/Calculate/wallpaper.jpg'"
 fi
+
+
+rm -f ~/.config/autostart/cldg-adrien.desktop

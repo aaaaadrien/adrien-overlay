@@ -26,8 +26,10 @@ src_install() {
 	doins ${FILESDIR}/gnome-cls-use
 	#insinto /etc/portage/make.conf
 	#doins ${FILESDIR}/gnome-makeconf
-	insinto /etc/profile.d
-	doins ${FILESDIR}/gnome-keyboard.sh
+	exeinto /etc/calculate
+	doexe ${FILESDIR}/cldg-adrien.sh
+	insinto /etc/skel/.config/autostart
+	doins ${FILESDIR}/cldg-adrien.desktop
 }
 
 pkg_postinst() {
