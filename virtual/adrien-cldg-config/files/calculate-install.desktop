@@ -1,0 +1,20 @@
+#------------------------------------------------------------------------------
+# Modified Calculate Utilities 3.6.3.2
+# Processed template files:
+# /var/lib/layman/calculate/profiles/templates/3.6/6_ac_desktop_profile/2-user/mate-base/MATE-1.8/Desktop/calculate-install.desktop
+#------------------------------------------------------------------------------
+[Desktop Entry]
+Name=Calculate Linux Install
+Name[ru]=Установка Calculate Linux
+Name[fr]=Installer Calculate Linux
+Name[es]=Instalar Calculate Linux
+Name[de]=Calculate Linux installieren
+Name[ua]=Установка Calculate Linux
+Comment=Calculate Linux installer
+Exec=cl-console-gui-install
+Icon=console-gui-install
+Terminal=false
+Type=Application
+Categories=System;
+StartupNotify=true
+NoDisplay=false

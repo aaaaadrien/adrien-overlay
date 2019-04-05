@@ -28,6 +28,8 @@ src_install() {
 	#doins ${FILESDIR}/gnome-makeconf
 	exeinto /etc/calculate
 	doexe ${FILESDIR}/cldg-adrien.sh
+	insinto /etc/calculate
+	doins /etc/calculate/calculate-install.desktop
 	insinto /etc/skel/.config/autostart
 	doins ${FILESDIR}/cldg-adrien.desktop
 }
