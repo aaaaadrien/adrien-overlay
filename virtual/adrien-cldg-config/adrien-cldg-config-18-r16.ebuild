@@ -11,7 +11,7 @@ SRC_URI=""
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
+IUSE="games"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
@@ -23,6 +23,9 @@ src_install() {
 	doins ${FILESDIR}/gnome-keywords
 	insinto /etc/portage/package.use
 	doins ${FILESDIR}/gnome-use
+	if ! use games ; then
+		doins ${FILESDIR}/gnome-use-nogames
+	fi
 	doins ${FILESDIR}/gnome-cls-use
 	#insinto /etc/portage/make.conf
 	#doins ${FILESDIR}/gnome-makeconf
