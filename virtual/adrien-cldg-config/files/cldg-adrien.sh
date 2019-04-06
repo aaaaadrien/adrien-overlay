@@ -18,6 +18,11 @@ then
 	#Theme
 	gsettings set org.gnome.desktop.interface gtk-theme "Calculate"
 
+	# Window buttons
+	gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
+
+
 	# Some things if in live CD
 	root=$(df / | tail -1 | awk '{ print $1}')
 	if [[ "$root" == "none" ]]
