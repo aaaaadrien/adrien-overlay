@@ -30,7 +30,7 @@ src_install() {
 	doexe ${FILESDIR}/cldg-adrien.sh
 	insinto /etc/calculate
 	doins ${FILESDIR}/calculate-install.desktop
-	insinto /etc/skel/.config/autostart
+	insinto /etc/xdg/autostart
 	doins ${FILESDIR}/cldg-adrien.desktop
 }
 
