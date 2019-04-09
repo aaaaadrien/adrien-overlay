@@ -5,14 +5,6 @@ if [ ! -e ~/.config/cldg-adrien.conf ]
 then
 	sleep 1 #Wait 1 second ... some slow PC
 
-	#Set french keyboard if language FR
-	L=$(echo $LANG | cut -d_ -f1)
-	K=$(gsettings get org.gnome.desktop.input-sources sources | cut -d\' -f4)
-
-	if [[ "$L" == "fr" ]] && [[ "$K" == "us" ]]
-	then
-		gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'fr+oss')]"
-	fi
 
 	# Background
 	gsettings set org.gnome.desktop.background picture-uri "'file:///usr/share/themes/Calculate/wallpaper.jpg'"
@@ -27,6 +19,19 @@ then
 	profile=$(gsettings get org.gnome.Terminal.ProfilesList default | sed -e "s/'//g")
 	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors "false"
 	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "rgb(44,44,44)"
+	
+	sleep 1 # Wait 1 second for slow PC
+	
+	#Set french keyboard if language FR
+	L=$(echo $LANG | cut -d_ -f1)
+	K=$(gsettings get org.gnome.desktop.input-sources sources | cut -d\' -f4)
+
+	if [[ "$L" == "fr" ]] && [[ "$K" == "us" ]]
+	then
+		gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'fr+oss')]"
+	fi
+
+	sleep 1 # Wait gnome shell loaded 
 
 	# Extensions
 	# Classical menu
