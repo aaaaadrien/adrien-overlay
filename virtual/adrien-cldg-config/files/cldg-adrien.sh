@@ -28,6 +28,14 @@ then
 	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors "false"
 	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "rgb(44,44,44)"
 
+	# Extensions
+	# Classical menu
+	gnome-shell-extension-tool -e apps-menu@gnome-shell-extensions.gcampax.github.com
+	# Dash to dock
+	gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
+	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-position "BOTTOM"
+	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-fixed false
+
 
 	# Some things if in live CD
 	root=$(df / | tail -1 | awk '{ print $1}')
