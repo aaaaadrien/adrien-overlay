@@ -45,6 +45,8 @@ then
 		#DESKTOP=$(grep XDG_DESKTOP ~/.config/user-dirs.dirs | cut -d\" -f2)
 		#cp /etc/calculate/calculate-install.desktop $DESKTOP/
 		cp /etc/calculate/calculate-install.desktop /home/$USER/.local/share/applications/
+	else
+		cp /usr/share/applications/cl-console-gui.desktop /home/$USER/.local/share/applications/
 	fi
 
 	# Config file creation
