@@ -3,6 +3,8 @@
 # First lanch of session
 if [ ! -e ~/.config/cldg-adrien.conf ]
 then
+	sleep 1 #Wait 1 second ... some slow PC
+
 	#Set french keyboard if language FR
 	L=$(echo $LANG | cut -d_ -f1)
 	K=$(gsettings get org.gnome.desktop.input-sources sources | cut -d\' -f4)
@@ -21,6 +23,10 @@ then
 	# Window buttons
 	gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
+	# Terminal color
+	profile=$(gsettings get org.gnome.Terminal.ProfilesList default | sed -e "s/'//g")
+	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" use-theme-colors "false"
+	gsettings set "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:$profile/" background-color "rgb(44,44,44)"
 
 
 	# Some things if in live CD
