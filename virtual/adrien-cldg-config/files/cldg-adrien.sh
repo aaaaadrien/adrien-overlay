@@ -1,10 +1,11 @@
 #! /bin/bash
 
-# First lanch of session
-if [ ! -e ~/.config/cldg-adrien.conf ]
-then
-	sleep 1 #Wait 1 second ... some slow PC
+pidof gnome-shell
+errorgnome=$?
 
+# First lanch of session
+if [ ! -e ~/.config/cldg-adrien.conf ] && [ $errorgnome -eq 0 ]
+then
 
 	# Background
 	gsettings set org.gnome.desktop.background picture-uri "'file:///usr/share/themes/Calculate/wallpaper.jpg'"
