@@ -41,6 +41,7 @@ then
 	gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-position "BOTTOM"
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-fixed false
+	gsettings set "org.gnome.shell.extensions.dash-to-dock" autohide-in-fullscreen true 
 
 
 	# Some things if in live CD
