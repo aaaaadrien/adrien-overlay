@@ -8,9 +8,9 @@
 
 
 # AMD64 Profiles
-amd64		CLDGA/amd64					stable
+amd64		CLDGA/amd64					exp
 
 # x86 Profiles
-x86		CLDGA/x86						stable
+x86		CLDGA/x86					exp
 
 # vim: set ts=8
