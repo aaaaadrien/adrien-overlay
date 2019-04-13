@@ -1,0 +1,4 @@
+# -----------------------------------------
+# Removed unnecessary dependence
+# -----------------------------------------
+sys-apps/calculate-utils client qt5
