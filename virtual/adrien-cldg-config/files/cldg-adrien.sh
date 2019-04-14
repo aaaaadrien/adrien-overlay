@@ -42,6 +42,8 @@ then
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-position "BOTTOM"
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-fixed false
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" autohide-in-fullscreen true 
+	# AppIndicator
+	gnome-shell-extension-tool -e appindicatorsupport@rgcjonas.gmail.com
 
 
 	# Some things if in live CD
