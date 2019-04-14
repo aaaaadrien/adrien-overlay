@@ -18,6 +18,10 @@ RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
 
+src_configure() {
+	eselect profile set adrien-overlay:CLDGA/amd64
+}
+
 src_install() {
 	#insinto /etc/portage/package.keywords
 	#doins ${FILESDIR}/gnome-keywords
@@ -38,10 +42,8 @@ src_install() {
 }
 
 pkg_postinst() {
-local arch=$(uname -m)
 	ewarn "If you use CLS, to install GNOME as CLDG ISO, you can emerge this packages"
 	ewarn "emerge -a gnome-shell gnome-core-apps gnome-shell-extensions gnome-terminal nautilus"
 	ewarn "For extra apps such as games : emerge -a gnome-base/gnome-extra-apps"
-	eselect profile set adrien-overlay:CLDGA
 }
 
