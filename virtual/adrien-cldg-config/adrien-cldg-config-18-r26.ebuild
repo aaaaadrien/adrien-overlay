@@ -19,10 +19,10 @@ RDEPEND="${DEPEND}"
 S="${WORKDIR}"
 
 src_install() {
-	insinto /etc/portage/package.keywords
-	doins ${FILESDIR}/gnome-keywords
+	#insinto /etc/portage/package.keywords
+	#doins ${FILESDIR}/gnome-keywords
 	insinto /etc/portage/package.use
-	doins ${FILESDIR}/gnome-use
+	#doins ${FILESDIR}/gnome-use
 	if ! use games ; then
 		doins ${FILESDIR}/gnome-use-nogames
 	fi
@@ -38,8 +38,10 @@ src_install() {
 }
 
 pkg_postinst() {
+local arch=$(uname -m)
 	ewarn "If you use CLS, to install GNOME as CLDG ISO, you can emerge this packages"
 	ewarn "emerge -a gnome-shell gnome-core-apps gnome-shell-extensions gnome-terminal nautilus"
 	ewarn "For extra apps such as games : emerge -a gnome-base/gnome-extra-apps"
+	eselect profile set adrien-overlay:CLDGA
 }
 
