@@ -18,15 +18,11 @@ RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
 
-src_configure() {
-	eselect profile set adrien-overlay:CLDGA/amd64
-}
-
 src_install() {
-	#insinto /etc/portage/package.keywords
-	#doins ${FILESDIR}/gnome-keywords
+	insinto /etc/portage/package.keywords
+	doins ${FILESDIR}/gnome-keywords
 	insinto /etc/portage/package.use
-	#doins ${FILESDIR}/gnome-use
+	doins ${FILESDIR}/gnome-use
 	if ! use games ; then
 		doins ${FILESDIR}/gnome-use-nogames
 	fi
