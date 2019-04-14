@@ -1,3 +1,7 @@
+# Calculate
+sys-apps/calculate-utils client qt5
+
+# GNOME
 net-libs/libsoup vala
 gnome-base/librsvg vala
 x11-libs/gtksourceview vala
@@ -14,4 +18,6 @@ sys-fs/udisks elogind
 sys-apps/accountsservice elogind
 net-misc/networkmanager -consolekit -elogind
 media-sound/pulseaudio elogind
+
+# GNOME without games by default
 gnome-base/gnome-extra-apps -games
