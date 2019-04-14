@@ -8,7 +8,7 @@
 
 
 # AMD64 Profiles
-amd64		CLDGA/amd64					exp
+amd64		CLDGA/amd64					stable
 
 # x86 Profiles
 x86		CLDGA/x86					exp
