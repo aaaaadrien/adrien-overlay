@@ -5,8 +5,8 @@ diff -Naur a/steam b/steam
  unset IFS
  
  # Add paths to occasionally needed libraries not found in /usr/lib.
--export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}/usr/lib64/debiancompat:/usr/lib32/debiancompat:/usr/lib64/fltk:/usr/lib32/fltk"
-+#export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}/usr/lib64/debiancompat:/usr/lib32/debiancompat:/usr/lib64/fltk:/usr/lib32/fltk"
+-export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}@@GENTOO_LD_LIBRARY_PATH@@"
++#export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}@@GENTOO_LD_LIBRARY_PATH@@"
  
  # Steam appends /usr/lib32 to LD_LIBRARY_PATH. We need to make sure that
  # OpenGL implementation dir goes before that, so we need to append it
