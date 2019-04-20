@@ -55,8 +55,9 @@ PATCHES=(
 	"${FILESDIR}"/steam-set-distrib-release.patch
 	"${FILESDIR}"/steam-fix-joystick-detection.patch
 	"${FILESDIR}"/steam-libraries.patch
-	#Adrien
 	"${FILESDIR}"/steam-fix-preload-libxcb.patch
+	#Adrien pour ETS2 sinon se lance pas
+	"${FILESDIR}"/steam-fix-ld-library-path-59.patch
 )
 
 pkg_setup() {

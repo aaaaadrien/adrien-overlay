@@ -1,0 +1,13 @@
+diff -Naur a/steam b/steam
+--- a/steam	2019-04-20 09:51:47.218012560 +0200
++++ b/steam	2019-04-20 09:56:03.217031160 +0200
+@@ -42,7 +42,7 @@
+ unset IFS
+ 
+ # Add paths to occasionally needed libraries not found in /usr/lib.
+-export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}/usr/lib64/debiancompat:/usr/lib32/debiancompat:/usr/lib64/fltk:/usr/lib32/fltk"
++#export LD_LIBRARY_PATH+="${LD_LIBRARY_PATH+:}/usr/lib64/debiancompat:/usr/lib32/debiancompat:/usr/lib64/fltk:/usr/lib32/fltk"
+ 
+ # Steam appends /usr/lib32 to LD_LIBRARY_PATH. We need to make sure that
+ # OpenGL implementation dir goes before that, so we need to append it
+
