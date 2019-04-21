@@ -8,19 +8,20 @@ x11-libs/gtksourceview vala
 app-crypt/libsecret vala
 gnome-base/gdm elogind
 gnome-base/gnome-settings-daemon elogind
-sys-auth/pambase elogind
 gnome-base/gnome-control-center elogind
 gnome-base/gnome-shell elogind
 gnome-base/gnome-session elogind
 x11-wm/mutter elogind
 gnome-base/gvfs elogind
-sys-fs/udisks elogind
-sys-apps/accountsservice elogind
-net-misc/networkmanager -consolekit -elogind
-media-sound/pulseaudio elogind
 
 #Elogind
+sys-fs/udisks elogind
+net-misc/networkmanager -consolekit -elogind
 sys-apps/dbus elogind
+sys-process/procps elogind
+media-sound/pulseaudio elogind
+sys-apps/accountsservice elogind
+sys-auth/pambase elogind
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
