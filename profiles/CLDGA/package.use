@@ -19,5 +19,8 @@ sys-apps/accountsservice elogind
 net-misc/networkmanager -consolekit -elogind
 media-sound/pulseaudio elogind
 
+#Elogind
+sys-apps/dbus elogind
+
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
