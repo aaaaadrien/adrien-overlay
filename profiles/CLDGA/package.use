@@ -23,6 +23,7 @@ app-crypt/libsecret vala
 #media-sound/pulseaudio elogind
 #sys-apps/accountsservice elogind -consolekit
 #sys-auth/pambase elogind
+sys-auth/polkit -elogind consolekit
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
