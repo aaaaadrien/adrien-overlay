@@ -1,2 +1,2 @@
-USE="${USE} -consolekit elogind"
+USE="-consolekit elogind"
 THEMES="CLS"
