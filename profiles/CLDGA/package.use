@@ -6,22 +6,23 @@ net-libs/libsoup vala
 gnome-base/librsvg vala
 x11-libs/gtksourceview vala
 app-crypt/libsecret vala
-gnome-base/gdm elogind
-gnome-base/gnome-settings-daemon elogind
-gnome-base/gnome-control-center elogind
-gnome-base/gnome-shell elogind
-gnome-base/gnome-session elogind
-x11-wm/mutter elogind
-gnome-base/gvfs elogind
+
+#gnome-base/gdm elogind
+#gnome-base/gnome-settings-daemon elogind
+#gnome-base/gnome-control-center elogind
+#gnome-base/gnome-shell elogind
+#gnome-base/gnome-session elogind
+#x11-wm/mutter elogind
+#gnome-base/gvfs elogind
 
 #Elogind
-sys-fs/udisks elogind
-net-misc/networkmanager -consolekit -elogind
-sys-apps/dbus elogind
-sys-process/procps elogind
-media-sound/pulseaudio elogind
-sys-apps/accountsservice elogind -consolekit
-sys-auth/pambase elogind
+#sys-fs/udisks elogind
+#net-misc/networkmanager -consolekit -elogind
+#sys-apps/dbus elogind
+#sys-process/procps elogind
+#media-sound/pulseaudio elogind
+#sys-apps/accountsservice elogind -consolekit
+#sys-auth/pambase elogind
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
