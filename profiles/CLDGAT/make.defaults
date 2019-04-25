@@ -1,0 +1,2 @@
+USE="-consolekit elogind nautilus gnome gnome-keyring tracker gnome-online-accounts"
+THEMES="CLS"
