@@ -13,7 +13,10 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="games"
 
-DEPEND="gnome-extra/cinnamon-session"
+DEPEND="
+		gnome-extra/cinnamon-session
+		media-sound/alsa-utils
+		"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
