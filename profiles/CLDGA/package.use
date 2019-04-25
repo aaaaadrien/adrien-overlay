@@ -14,6 +14,7 @@ app-crypt/libsecret vala
 #gnome-base/gnome-session elogind
 #x11-wm/mutter elogind
 #gnome-base/gvfs elogind
+net-libs/webkit-gtk -gnome-keyring #On garde binaire
 
 #Elogind
 #sys-fs/udisks elogind
@@ -23,7 +24,8 @@ app-crypt/libsecret vala
 #media-sound/pulseaudio elogind
 #sys-apps/accountsservice elogind -consolekit
 #sys-auth/pambase elogind
-sys-auth/polkit -elogind consolekit
+#sys-auth/polkit -elogind consolekit
+sys-auth/polkit gtk elogind -consolekit
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
