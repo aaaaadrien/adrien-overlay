@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="games"
 
-DEPEND=""
+DEPEND="gnome-extra/cinnamon-session"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"
