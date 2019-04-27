@@ -1,0 +1,16 @@
+# Calculate chmod=0644 chown=root:root comment=#
+auth       required     pam_env.so
+auth       required     pam_unix.so try_first_pass
+
+account    required     pam_unix.so
+
+password   required     pam_cracklib.so difok=2 minlen=8 dcredit=2 ocredit=2 retry=3
+password   sufficient   pam_unix.so nullok sha256 shadow use_authtok
+password   required     pam_deny.so
+
+session    required     pam_limits.so
+#?pkg(sys-auth/elogind)!=&&pkg(gnome-extra/cinnamon-session)!=||pkg(sys-auth/elogind)!=&&pkg(gnome-base/gnome-session)!=#
+-session   optional     pam_loginuid.so
+-session   optional     pam_elogind.so
+#pkg#
+session    required     pam_unix.so
