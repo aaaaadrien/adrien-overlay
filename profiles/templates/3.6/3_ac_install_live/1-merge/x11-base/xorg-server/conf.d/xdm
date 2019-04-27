@@ -35,7 +35,7 @@ START_STOP_ARGS=
 #pkg#
 #?pkg(x11-misc/lightdm)==||pkg(x11-misc/light-locker)==&&pkg(gnome-extra/cinnamon-screensaver)==#
 XUSER=#-cl_autologin-#
-DISPLAYMANAGER="lightdm"
+DISPLAYMANAGER="gdm"
 START_STOP_ARGS="--background -- /usr/bin/xautologin $XUSER $CHECKVT"
 #pkg#
 #!cl_autologin#
