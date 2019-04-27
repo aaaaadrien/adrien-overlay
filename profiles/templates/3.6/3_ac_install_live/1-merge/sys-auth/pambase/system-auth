@@ -1,0 +1,60 @@
+# Calculate chmod=0644 chown=root:root comment=#
+auth       required     pam_env.so
+#?module(unix)==||server.sr_unix_set!=on#
+#?pkg(sys-auth/pam_client)!=&&module(client)!=&&pkg(sys-apps/calculate-server)==#
+auth       [success=3 new_authtok_reqd=done default=ignore]   pam_unix.so try_first_pass
+auth       requisite    pam_client.so
+auth       [success=1 new_authtok_reqd=done default=ignore]   pam_ldap.so use_first_pass
+auth       requisite     pam_deny.so
+auth       required     pam_permit.so
+#pkg#
+#module#
+#?pkg(sys-apps/calculate-server)!=||module(unix)!=&&server.sr_unix_set==on#
+auth       [success=2 new_authtok_reqd=done default=ignore]   pam_unix.so try_first_pass
+auth       [success=1 new_authtok_reqd=done default=ignore]   pam_ldap.so use_first_pass
+auth       requisite    pam_deny.so
+auth       required     pam_permit.so
+#pkg#
+#?module(unix)==||server.sr_unix_set!=on#
+#?pkg(sys-auth/pam_client)==&&pkg(sys-apps/calculate-server)==||module(client)==&&pkg(sys-apps/calculate-server)==#
+auth       required     pam_unix.so try_first_pass
+#pkg#
+#module#
+#?pkg(sys-auth/pam_keystore)!=#
+auth       optional     pam_keystore.so use_first_pass
+#pkg#
+#?pkg(sys-fs/ecryptfs-utils)!=#
+auth       optional     pam_ecryptfs.so unwrap
+#pkg#
+
+account    required     pam_unix.so
+#?pkg(sys-auth/pam_client)!=&&module(client)!=||pkg(sys-apps/calculate-server)!=||module(unix)!=&&server.sr_unix_set==on#
+account    sufficient   pam_ldap.so
+#pkg#
+
+password   required     pam_cracklib.so difok=2 minlen=8 dcredit=2 ocredit=2 retry=3
+password   sufficient   pam_unix.so nullok sha256 shadow use_authtok
+#?pkg(sys-fs/ecryptfs-utils)!=#
+password   optional     pam_ecryptfs.so
+#pkg#
+#?pkg(sys-auth/pam_client)!=&&module(client)!=||pkg(sys-apps/calculate-server)!=||module(unix)!=&&server.sr_unix_set==on#
+password   sufficient   pam_ldap.so
+#pkg#
+password   required     pam_deny.so
+
+session    required     pam_env.so
+session    required     pam_limits.so
+#?pkg(sys-auth/elogind)!=&&pkg(gnome-extra/cinnamon-session)!=||pkg(sys-auth/elogind)!=&&pkg(gnome-base/gnome-session)!=#
+-session   optional     pam_loginuid.so
+-session   optional     pam_elogind.so
+#pkg#
+session    required     pam_unix.so
+#?pkg(sys-fs/ecryptfs-utils)!=#
+session    optional     pam_ecryptfs.so unwrap
+#pkg#
+#?pkg(sys-auth/pam_client)!=&&module(client)!=||pkg(sys-apps/calculate-server)!=||module(unix)!=&&server.sr_unix_set==on#
+session    optional     pam_ldap.so
+#pkg#
+#?pkg(sys-apps/systemd)!=#
+session    optional     pam_systemd.so
+#pkg#
