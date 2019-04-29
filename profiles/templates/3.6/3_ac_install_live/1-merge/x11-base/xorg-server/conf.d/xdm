@@ -29,13 +29,12 @@ START_STOP_ARGS=
 #pkg#
 #!module#
 #?cl_autologin!=#
-#?pkg(x11-misc/lightdm)!=&&pkg(x11-misc/light-locker)!=||pkg(x11-misc/lightdm)!=&&pkg(gnome-extra/cinnamon-screensaver)!=#
+#?pkg(x11-misc/lightdm)!=#
 DISPLAYMANAGER="lightdm"
 START_STOP_ARGS=
-#pkg#
-#?pkg(x11-misc/lightdm)==||pkg(x11-misc/light-locker)==&&pkg(gnome-extra/cinnamon-screensaver)==#
+#!pkg#
 XUSER=#-cl_autologin-#
-DISPLAYMANAGER="gdm"
+DISPLAYMANAGER="lightdm"
 START_STOP_ARGS="--background -- /usr/bin/xautologin $XUSER $CHECKVT"
 #pkg#
 #!cl_autologin#
