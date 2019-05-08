@@ -41,7 +41,7 @@ app-misc/tracker
 <gnome-base/gnome-desktop-3.31
 <gnome-extra/evolution-data-server-3.31
 <x11-terms/gnome-terminal-3.31
-dev-lang/spidermonkey
+#dev-lang/spidermonkey
 <gnome-extra/yelp-xsl-3.31
 <gnome-extra/gnome-characters-3.31
 <games-puzzle/gnome-sudoku-3.31
