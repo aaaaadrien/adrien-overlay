@@ -67,7 +67,7 @@ app-i18n/unicode-data
 <games-board/gnome-chess-3.31
 <mail-client/evolution-3.31
 <gnome-extra/gnome-system-monitor-3.31
-media-libs/gegl
+#media-libs/gegl
 x11-libs/vte
 <net-wireless/gnome-bluetooth-3.31
 <gnome-extra/gnome-calendar-3.31
