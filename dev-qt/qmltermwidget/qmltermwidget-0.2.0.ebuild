@@ -9,7 +9,7 @@ inherit eutils qmake-utils
 DESCRIPTION="QML port of qtermwidget"
 HOMEPAGE="https://github.com/Swordfish90/qmltermwidget"
 KEYWORDS="x86 amd64"
-SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 RESTRICT="mirror"
 
 LICENSE="LGPL-3.0"
