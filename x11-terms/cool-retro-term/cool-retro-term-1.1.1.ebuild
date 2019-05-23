@@ -9,7 +9,7 @@ inherit qmake-utils eutils
 DESCRIPTION="A good looking terminal emulator which mimics the old cathode display"
 HOMEPAGE="https://github.com/Swordfish90/cool-retro-term"
 
-SRC_URI="${HOMEPAGE}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="${HOMEPAGE}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 KEYWORDS="x86 amd64"
 RESTRICT="mirror"
 
