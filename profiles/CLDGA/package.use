@@ -33,3 +33,4 @@ gnome-base/gnome-extra-apps -games
 # garde binaires
 net-libs/webkit-gtk -gnome-keyring 
 www-client/chromium -gnome-keyring 
+media-gfx/gimp -gnome
