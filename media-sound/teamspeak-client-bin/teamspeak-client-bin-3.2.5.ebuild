@@ -19,7 +19,7 @@ IUSE="alsa pulseaudio"
 REQUIRED_USE="|| ( alsa pulseaudio )"
 
 RDEPEND="
-	dev-libs/quazip[-qt4,qt5]
+	dev-libs/quazip
 	dev-qt/qtcore:5
 	dev-qt/qtgui:5[accessibility]
 	dev-qt/qtnetwork:5
