@@ -1,0 +1,9 @@
+--- a/steam	2019-07-28 11:59:48.831719689 +0200
++++ b/steam	2019-05-22 20:00:27.342626509 +0200
+@@ -1,4 +1,6 @@
+ #!/usr/bin/env bash
++GSETTINGS_BACKEND=memory
++export GSETTINGS_BACKEND
+ #
+ # This is the Steam script that typically resides in /usr/bin
+ # It will create the Steam bootstrap if necessary and then launch steam.

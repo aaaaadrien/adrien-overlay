@@ -58,6 +58,8 @@ PATCHES=(
 	"${FILESDIR}"/steam-fix-preload-libxcb.patch
 	#Adrien pour ETS2 sinon se lance pas
 	"${FILESDIR}"/steam-fix-ld-library-path-59.patch
+	#Adrien pour magasin qui s'affiche pas dans GNOME
+	"${FILESDIR}"/steam-fix-gnome.patch
 )
 
 pkg_setup() {
