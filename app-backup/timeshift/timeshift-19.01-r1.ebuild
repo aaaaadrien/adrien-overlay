@@ -22,6 +22,7 @@ IUSE=""
 # Noter les dépendances
 DEPEND="x11-libs/gtk+
 		net-misc/rsync
+		>=x11-libs/vte-0.54.4[vala]
 		"
 RDEPEND="${DEPEND}"
 BDEPEND=">=dev-lang/vala-0.42
