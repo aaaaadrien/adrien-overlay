@@ -28,17 +28,17 @@ UNBUNDLED_LIBS="
 NATIVE_DEPEND="
 	app-arch/bzip2
 	dev-libs/expat
-	dev-libs/glib:2
+	dev-libs/glib
 	dev-libs/libffi
-	dev-libs/libxml2:2
-	media-libs/fontconfig:1.0
-	media-libs/freetype:2
+	dev-libs/libxml2
+	media-libs/fontconfig
+	media-libs/freetype
 	media-libs/glu
 	media-libs/gst-plugins-base
 	media-libs/gstreamer
-	media-libs/libpng:1.2
+	media-libs/libpng
 	virtual/opengl
-	media-libs/tiff:3
+	media-libs/tiff
 	sys-apps/util-linux
 	sys-libs/zlib
 	x11-libs/libdrm
