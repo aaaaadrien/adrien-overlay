@@ -34,8 +34,8 @@ NATIVE_DEPEND="
 	media-libs/fontconfig:1.0
 	media-libs/freetype:2
 	media-libs/glu
-	media-libs/gst-plugins-base:0.10
-	media-libs/gstreamer:0.10
+	media-libs/gst-plugins-base
+	media-libs/gstreamer
 	media-libs/libpng:1.2
 	virtual/opengl
 	media-libs/tiff:3
