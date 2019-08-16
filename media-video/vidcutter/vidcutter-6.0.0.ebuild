@@ -22,6 +22,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}
 	>=dev-python/PyQt5-5.7[dbus,multimedia,${PYTHON_USEDEP}]
+	dev-python/pyopengl
 	media-video/mediainfo
 	virtual/ffmpeg[X,encode]"
 BDEPEND="
