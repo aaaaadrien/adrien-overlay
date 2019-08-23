@@ -29,6 +29,8 @@ sys-auth/polkit gtk elogind -consolekit
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
 
+# GNOME Software only for extensions
+gnome-extra/gnome-software -firmware
 
 # garde binaires
 net-libs/webkit-gtk -gnome-keyring 
