@@ -9,12 +9,11 @@ inherit eutils
 DESCRIPTION="All-In-One Solution for Remote Access and Support over the Internet"
 HOMEPAGE="http://anydesk.de/"
 SRC_URI="
-        x86?   ( http://download.anydesk.com/linux/${PN}-${PV}-i686.tar.gz )
         amd64? ( http://download.anydesk.com/linux/${PN}-${PV}-amd64.tar.gz )"
 
 LICENSE=""
 SLOT="0"
-KEYWORDS="x86 amd64"
+KEYWORDS="amd64"
 
 QA_PREBUILT="usr/bin/anydesk"
 
