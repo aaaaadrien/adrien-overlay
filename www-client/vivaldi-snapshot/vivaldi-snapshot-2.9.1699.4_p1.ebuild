@@ -72,16 +72,6 @@ src_prepare() {
 	mv usr/share/doc/${PN} usr/share/doc/${PF} || die
 	chmod 0755 usr/share/doc/${PF} || die
 
-	rm \
-		_gpgbuilder \
-		etc/cron.daily/${PN} \
-		${VIVALDI_HOME}/libwidevinecdm.so \
-		|| die
-	rmdir \
-		etc/cron.daily/ \
-		etc/ \
-		|| die
-
 	local c d
 	for d in 16 22 24 32 48 64 128 256; do
 		mkdir -p usr/share/icons/hicolor/${d}x${d}/apps || die
