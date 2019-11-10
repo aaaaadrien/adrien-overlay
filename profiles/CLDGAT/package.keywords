@@ -13,13 +13,14 @@
 #media-fonts/cantarell
 <gnome-base/gnome-settings-daemon-3.33
 <app-crypt/seahorse-3.33
-#dev-libs/atk
+<dev-libs/atk-2.35
 #gnome-base/libgtop
 <app-dicts/gnome-dictionary-3.33
 #sys-apps/bubblewrap
 <gnome-extra/yelp-3.33
 <games-puzzle/gnome-taquin-3.33
 <x11-themes/adwaita-icon-theme-3.33
+gui-libs/libhandy
 #app-misc/tracker-miners
 #x11-libs/gdk-pixbuf
 #gnome-base/librsvg
@@ -68,8 +69,8 @@
 <mail-client/evolution-3.33
 <gnome-extra/gnome-system-monitor-3.33
 #media-libs/gegl
-#x11-libs/vte
-<net-wireless/gnome-bluetooth-3.33
+<x11-libs/vte-0.56.5
+<net-wireless/gnome-bluetooth-3.35
 <gnome-extra/gnome-calendar-3.33
 <games-puzzle/lightsoff-3.33
 <media-gfx/shotwell-3.33
@@ -78,6 +79,7 @@
 <gnome-extra/gnome-user-docs-3.33
 <gnome-base/dconf-editor-3.33
 <gnome-base/gnome-extra-apps-3.33
+<gnome-base/gnome-keyring-3.33
 
 #dev-lang/vala
 #dev-libs/vala-common
