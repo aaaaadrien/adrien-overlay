@@ -55,7 +55,7 @@ PATCHES=(
 	"${FILESDIR}"/steam-set-distrib-release.patch
 	"${FILESDIR}"/steam-fix-joystick-detection.patch
 	"${FILESDIR}"/steam-libraries.patch
-	"${FILESDIR}"/steam-fix-preload-libxcb.patch
+	#"${FILESDIR}"/steam-fix-preload-libxcb.patch # useless since 17.1 profile
 	#Adrien pour ETS2 sinon se lance pas
 	"${FILESDIR}"/steam-fix-ld-library-path-59.patch
 	#Adrien pour magasin qui s'affiche pas dans GNOME
