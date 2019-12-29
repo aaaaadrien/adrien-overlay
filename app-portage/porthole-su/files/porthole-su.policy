@@ -7,7 +7,7 @@
  <vendor>Adrien_D</vendor>
  <vendor_url>http://www.linuxtricks.fr</vendor_url>
 
- <action id="org.portage.porthole.pkexec.run">
+ <action id="org.portage.porthole-su.pkexec.run">
     <description>Run Porthole in su</description>
     <message>Launch Porthole package manager in Super User mode ! WARNING ! BE CAREFUL !</message>
     <icon_name>porthole</icon_name>
