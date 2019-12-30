@@ -15,6 +15,7 @@ IUSE="games"
 
 DEPEND="
 		media-sound/alsa-utils
+		virtual/adrien-gdm-keyboard
 		"
 RDEPEND="${DEPEND}"
 
