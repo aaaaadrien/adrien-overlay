@@ -1,0 +1,4 @@
+#! /bin/bash
+
+kbd=$(echo $LANG | cut -c 4-5 | tr '[:upper:]' '[:lower:]')
+/usr/bin/setxkbmap -display :0 $kbd

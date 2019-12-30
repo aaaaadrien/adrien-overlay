@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Set Login Keyboard
+Exec=/usr/bin/adrien-gdm-keyboard
+NoDisplay=true
