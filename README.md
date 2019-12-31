@@ -14,7 +14,7 @@ Make sure /etc/portage/repos.conf directory exists and git installed.
 
 Make sure app-eselect/eselect-repository installed on your system
 
-*eselect repository add adrien-overlay git https://github.com/aaaaadrien/adrien-overlay.git
+*eselect repository add adrien-overlay git https://github.com/aaaaadrien/adrien-overlay.git*
 
 ### With Layman
 
