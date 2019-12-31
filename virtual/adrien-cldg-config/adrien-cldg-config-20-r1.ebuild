@@ -4,7 +4,7 @@
 
 EAPI=6
 
-DESCRIPTION="EXPERIMENTAL !! Package to install files for CLDG ISO (from CLS) by Adrien.D"
+DESCRIPTION="Package to install files for CLDG ISO (from CLS) by Adrien.D"
 HOMEPAGE="http://www.linuxtricks.fr"
 SRC_URI=""
 
