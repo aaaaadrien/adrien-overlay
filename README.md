@@ -4,21 +4,19 @@
 
 ### With "simple" portage :
 
-Make sure /etc/portage/repos.conf directory exists and git installed.
+Make sure /etc/portage/repos.conf directory exists and dev-vcs/git installed.
 
 *curl https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repo.conf -o /etc/portage/repos.conf/adrien-overlay.conf*
 
 ### With eselect repository : (Calculate Linux way)
 
-Make sure /etc/portage/repos.conf directory exists and git installed.
-
-Make sure app-eselect/eselect-repository installed on your system
+Make sure /etc/portage/repos.conf directory exists, dev-vcs/git and app-eselect/eselect-repository installed.
 
 *eselect repository add adrien-overlay git https://github.com/aaaaadrien/adrien-overlay.git*
 
 ### With Layman
 
-Make sure app-portage/layman installed on your system
+Make sure dev-vcs/git and app-portage/layman installed on your system
 
 *curl https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -o /etc/layman/overlays/adrien-overlay.xml*
 
