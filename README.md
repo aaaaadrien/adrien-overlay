@@ -12,9 +12,13 @@ Make sure /etc/portage/repos.conf directory exists and git installed.
 
 Make sure /etc/portage/repos.conf directory exists and git installed.
 
+Make sure app-eselect/eselect-repository installed on your system
+
 *eselect repository add adrien-overlay git https://github.com/aaaaadrien/adrien-overlay.git
 
 ### With Layman
+
+Make sure app-portage/layman installed on your system
 
 *curl https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml -o /etc/layman/overlays/adrien-overlay.xml*
 
