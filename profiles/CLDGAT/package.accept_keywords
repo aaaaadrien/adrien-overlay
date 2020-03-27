@@ -81,6 +81,8 @@ gnome-extra/gnome-shell-extension-dash-to-dock
 <sys-fs/fuse-common-3.9.2
 <dev-libs/gjs-1.58.7
 <dev-libs/gobject-introspection-common-1.65.0
+<dev-libs/gobject-introspection-1.65.0
 <dev-util/sysprof-capture-3.35
 <x11-libs/vte-0.58.5
 <dev-libs/glib-2.65
+<x11-libs/gtk+-3.24.16
