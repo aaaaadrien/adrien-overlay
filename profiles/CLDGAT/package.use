@@ -6,7 +6,10 @@ net-libs/libsoup vala
 gnome-base/librsvg vala
 x11-libs/gtksourceview vala
 app-crypt/libsecret vala
+dev-libs/libical vala
 
+
+# Elogind mais géré dans profile
 #gnome-base/gdm elogind
 #gnome-base/gnome-settings-daemon elogind
 #gnome-base/gnome-control-center elogind
@@ -14,8 +17,6 @@ app-crypt/libsecret vala
 #gnome-base/gnome-session elogind
 #x11-wm/mutter elogind
 #gnome-base/gvfs elogind
-
-#Elogind
 #sys-fs/udisks elogind
 #net-misc/networkmanager -consolekit -elogind
 #sys-apps/dbus elogind
@@ -32,7 +33,7 @@ gnome-base/gnome-extra-apps -games
 # GNOME Software only for extensions
 gnome-extra/gnome-software -firmware
 
-# garde binaires
+# On garde binaires de CL
 net-libs/webkit-gtk -gnome-keyring 
 www-client/chromium -gnome-keyring 
 media-gfx/gimp -gnome
