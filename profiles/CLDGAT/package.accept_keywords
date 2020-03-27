@@ -86,3 +86,4 @@ gnome-extra/gnome-shell-extension-dash-to-dock
 <x11-libs/vte-0.58.5
 <dev-libs/glib-2.65
 <x11-libs/gtk+-3.24.16
+<dev-libs/folks-0.13.4
