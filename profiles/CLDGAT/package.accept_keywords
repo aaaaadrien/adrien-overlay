@@ -52,7 +52,6 @@ gui-libs/libhandy
 <games-board/gnome-chess-3.35
 <mail-client/evolution-3.35
 <gnome-extra/gnome-system-monitor-3.35
-<x11-libs/vte-0.56.5
 <net-wireless/gnome-bluetooth-3.35
 <gnome-extra/gnome-calendar-3.35
 <dev-libs/libdazzle-3.35
@@ -80,3 +79,8 @@ gnome-extra/gnome-shell-extension-dash-to-dock
 <gnome-base/gvfs-1.42.9
 <sys-fs/fuse-3.9.2
 <sys-fs/fuse-common-3.9.2
+<dev-libs/gjs-1.58.7
+<dev-libs/gobject-introspection-common-1.65.0
+<dev-util/sysprof-capture-3.35
+<x11-libs/vte-0.58.5
+<dev-libs/glib-2.65
