@@ -62,6 +62,7 @@ gui-libs/libhandy
 <gnome-base/dconf-editor-3.35
 <gnome-base/gnome-extra-apps-3.35
 <gnome-base/gnome-keyring-3.35
+<media-gfx/gnome-font-viewer-3.35
 
 
 <net-misc/gnome-online-miners-3.35
@@ -71,6 +72,8 @@ gui-libs/libhandy
 gnome-extra/gnome-shell-extension-desktop-icons
 gnome-extra/gnome-shell-extension-dash-to-panel
 gnome-extra/gnome-shell-extension-dash-to-dock
+gnome-extra/gnome-shell-extension-appindicator
+
 
 # Ce qu'il y a besoin
 #dev-lang/vala
