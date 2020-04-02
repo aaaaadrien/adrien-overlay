@@ -11,13 +11,13 @@ SRC_URI="https://github.com/micheleg/${MY_PN}/archive/extensions.gnome.org-v${PV
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	<gnome-base/gnome-shell-3.31.0
+	>=gnome-base/gnome-shell-3.33.0
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND="
