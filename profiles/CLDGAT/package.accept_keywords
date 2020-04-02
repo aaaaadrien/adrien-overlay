@@ -90,3 +90,4 @@ gnome-extra/gnome-shell-extension-appindicator
 <dev-libs/glib-2.65
 <x11-libs/gtk+-3.24.16
 <dev-libs/folks-0.13.4
+<dev-util/gdbus-codegen-2.64.9
