@@ -92,7 +92,7 @@ gui-libs/libhandy
 
 <gnome-extra/gnome-shell-extension-desktop-icons-19.10
 gnome-extra/gnome-shell-extension-dash-to-panel
-gnome-extra/gnome-shell-extension-dash-to-dock
+<gnome-extra/gnome-shell-extension-dash-to-dock-67
 
 
 <gnome-extra/gnome-software-3.33
