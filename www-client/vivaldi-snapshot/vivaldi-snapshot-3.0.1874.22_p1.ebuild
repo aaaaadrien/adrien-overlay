@@ -24,6 +24,7 @@ SRC_URI="
 LICENSE="Vivaldi"
 SLOT="0"
 KEYWORDS="amd64 arm arm64 x86"
+IUSE="cups"
 RESTRICT="bindist mirror"
 
 DEPEND="
@@ -38,7 +39,7 @@ RDEPEND="
 	media-libs/fontconfig
 	media-libs/freetype
 	media-libs/speex
-	net-print/cups
+	cups? (	net-print/cups )
 	sys-apps/dbus
 	sys-libs/libcap
 	x11-libs/cairo
