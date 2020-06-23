@@ -37,3 +37,4 @@ gnome-extra/gnome-software -firmware
 net-libs/webkit-gtk -gnome-keyring 
 www-client/chromium -gnome-keyring 
 media-gfx/gimp -gnome
+media-video/vlc -gnome-keyring
