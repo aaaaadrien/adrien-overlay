@@ -10,7 +10,7 @@ Make sure /etc/portage/repos.conf directory exists and dev-vcs/git installed.
 
 ### With eselect repository : (Calculate Linux way)
 
-Make sure /etc/portage/repos.conf directory exists, dev-vcs/git and app-eselect/eselect-repository installed.
+Make sure /etc/portage/repos.conf directory exists, and make sure dev-vcs/git and app-eselect/eselect-repository installed.
 
 *eselect repository add adrien-overlay git https://github.com/aaaaadrien/adrien-overlay.git*
 
