@@ -36,6 +36,7 @@ RDEPEND="
 	soup? ( >=net-libs/libsoup-2.40 )
 	systemd? ( sys-apps/systemd )
 	libmount? ( >=sys-apps/util-linux-2.23 )
+	dev-util/glib-utils
 "
 DEPEND="${RDEPEND}
 	sys-devel/bison
