@@ -36,7 +36,7 @@ then
 
 	# Extensions
 	# Classical menu
-	gnome-shell-extension-tool -e apps-menu@gnome-shell-extensions.gcampax.github.com
+	#gnome-shell-extension-tool -e apps-menu@gnome-shell-extensions.gcampax.github.com
 	# Dash to dock
 	gnome-shell-extension-tool -e dash-to-dock@micxgx.gmail.com
 	gsettings set "org.gnome.shell.extensions.dash-to-dock" dock-position "BOTTOM"
