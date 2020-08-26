@@ -1,5 +1,6 @@
 # GNOME 3.30
 <gnome-base/gnome-3.37
+<x11-libs/gtk+-3.24.23
 <gnome-base/gnome-extra-apps-3.37
 <gnome-base/gvfs-1.45
 <x11-themes/gnome-backgrounds-3.37
@@ -23,7 +24,7 @@
 gui-libs/libhandy
 #app-misc/tracker-miners
 #x11-libs/gdk-pixbuf
-#gnome-base/librsvg
+<gnome-base/librsvg-2.49
 <media-sound/gnome-music-3.37
 <gnome-base/gsettings-desktop-schemas-3.37
 <dev-util/glib-utils-2.65
