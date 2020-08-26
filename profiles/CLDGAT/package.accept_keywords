@@ -1,12 +1,12 @@
 # GNOME 3.30
 <gnome-base/gnome-3.37
 <gnome-base/gnome-extra-apps-3.37
-#gnome-base/gvfs
+<gnome-base/gvfs-1.45
 <x11-themes/gnome-backgrounds-3.37
 <gnome-base/gnome-shell-3.37
 <gnome-extra/gnome-shell-extensions-3.37
 <gnome-base/gnome-core-apps-3.37
-#dev-libs/glib
+<dev-libs/glib-2.65
 <gnome-base/gnome-core-libs-3.37
 <gnome-base/gdm-3.37
 <x11-wm/mutter-3.37
@@ -26,7 +26,7 @@ gui-libs/libhandy
 #gnome-base/librsvg
 <media-sound/gnome-music-3.37
 <gnome-base/gsettings-desktop-schemas-3.37
-#dev-util/glib-utils
+<dev-util/glib-utils-2.65
 #gnome-extra/gucharmap
 <gnome-base/gnome-control-center-3.37
 #app-misc/tracker
@@ -55,7 +55,7 @@ gui-libs/libhandy
 <gnome-extra/gnome-tweaks-3.37
 <gnome-base/gnome-session-3.37
 <games-puzzle/swell-foop-3.37
-#dev-libs/gjs
+<dev-libs/gjs-1.65
 #media-libs/babl
 <app-text/evince-3.37
 <sys-apps/baobab-3.37
