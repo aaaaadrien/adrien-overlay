@@ -40,7 +40,7 @@ gui-libs/libhandy
 <net-libs/gnome-online-accounts-3.37
 <games-board/gnome-mines-3.37
 <gnome-base/gnome-desktop-3.37
-#<gnome-extra/evolution-data-server-3.37
+<gnome-extra/evolution-data-server-3.37
 <x11-terms/gnome-terminal-3.37
 #dev-lang/spidermonkey
 <gnome-extra/yelp-xsl-3.37
@@ -65,8 +65,9 @@ gui-libs/libhandy
 <gnome-base/nautilus-3.37
 <gnome-base/dconf-editor-3.37
 <gnome-extra/gnome-contacts-3.37
+gui-libs/tepl
 <games-board/gnome-chess-3.37
-#<mail-client/evolution-3.37
+<mail-client/evolution-3.37
 <gnome-extra/gnome-system-monitor-3.37
 #media-libs/gegl
 #<x11-libs/vte-0.56.5
@@ -74,6 +75,7 @@ gui-libs/libhandy
 <gnome-extra/gnome-calendar-3.37
 <games-puzzle/lightsoff-3.37
 <media-gfx/shotwell-3.37
+<app-crypt/gcr-3.37
 #media-plugins/grilo-plugins
 <media-gfx/eog-3.37
 <gnome-extra/gnome-user-docs-3.37
