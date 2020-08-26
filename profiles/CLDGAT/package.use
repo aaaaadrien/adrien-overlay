@@ -37,6 +37,3 @@ net-libs/webkit-gtk -gnome-keyring
 www-client/chromium -gnome-keyring 
 media-gfx/gimp -gnome
 media-video/vlc -gnome-keyring
-
-# Pb multilib : 
-gnome-base/librsvg -abi_x86_32

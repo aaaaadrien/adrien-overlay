@@ -82,6 +82,7 @@ gui-libs/tepl
 <gnome-base/dconf-editor-3.37
 <gnome-base/gnome-extra-apps-3.37
 <gnome-base/gnome-keyring-3.37
+<dev-util/sysprof-capture-3.37
 
 #dev-lang/vala
 #dev-libs/vala-common
