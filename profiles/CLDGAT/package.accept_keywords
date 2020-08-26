@@ -42,7 +42,7 @@ gui-libs/libhandy
 <gnome-base/gnome-desktop-3.37
 <gnome-extra/evolution-data-server-3.37
 <x11-terms/gnome-terminal-3.37
-#dev-lang/spidermonkey
+<dev-lang/spidermonkey-68.12.0
 <gnome-extra/yelp-xsl-3.37
 <gnome-extra/gnome-characters-3.37
 <games-puzzle/gnome-sudoku-3.37
@@ -70,7 +70,7 @@ gui-libs/tepl
 <mail-client/evolution-3.37
 <gnome-extra/gnome-system-monitor-3.37
 #media-libs/gegl
-#<x11-libs/vte-0.56.5
+<x11-libs/vte-0.60.5
 <net-wireless/gnome-bluetooth-3.37
 <gnome-extra/gnome-calendar-3.37
 <games-puzzle/lightsoff-3.37
