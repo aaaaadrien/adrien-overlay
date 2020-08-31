@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Calculate Console
+Name[ru]=Консоль Calculate
+Comment=Calculate Console
+Exec=cl-console-gui
+Icon=cl-console-gui
+Terminal=false
+Type=Application
+Categories=Settings;X-GNOME-PersonalSettings;
+OnlyShowIn=KDE;LXQt;LXDE;MATE;Razor;ROX;TDE;Unity;XFCE;Old;

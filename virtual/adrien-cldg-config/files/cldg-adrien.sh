@@ -45,6 +45,10 @@ then
 	# AppIndicator
 	gnome-shell-extension-tool -e appindicatorsupport@rgcjonas.gmail.com
 
+	# Add icons
+	cp /etc/calculate/cl-console-gui.desktop /home/$USER/.local/share/applications/
+	cp /etc/calculate/cl-console-gui-update.desktop /home/$USER/.local/share/applications/
+
 
 	# Some things if in live CD
 	root=$(df / | tail -1 | awk '{ print $1}')
