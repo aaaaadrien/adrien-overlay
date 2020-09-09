@@ -5,7 +5,7 @@ EAPI=7
 inherit gnome2-utils
 
 #MY_PN="${PN/gnome-shell-extension-/}"
-DESCRIPTION="A dock for the Gnome Shell."
+DESCRIPTION="Gnome shell extension for KStatusNotifierItem / AppIndicator support."
 HOMEPAGE="https://github.com/ubuntu/${PN}/"
 SRC_URI="https://github.com/ubuntu/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
