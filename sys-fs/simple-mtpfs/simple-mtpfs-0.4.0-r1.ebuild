@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-inherit eutils
+inherit eutils autotools
 
 DESCRIPTION="Simple MTP fuse filesystem driver"
 HOMEPAGE="https://github.com/phatina/simple-mtpfs"
@@ -19,6 +19,12 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}
 	virtual/pkgconfig
+	sys-devel/autoconf-archive
 "
 
 AUTOTOOLS_AUTORECONF=1
+
+src_prepare() {
+	default
+	eautoreconf
+}
