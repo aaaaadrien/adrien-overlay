@@ -56,7 +56,7 @@ gui-libs/libhandy
 <gnome-extra/gnome-tweaks-3.39
 <gnome-base/gnome-session-3.39
 <games-puzzle/swell-foop-3.39
-<dev-libs/gjs-1.65
+<dev-libs/gjs-1.67
 #media-libs/babl
 <app-text/evince-3.39
 <sys-apps/baobab-3.39
