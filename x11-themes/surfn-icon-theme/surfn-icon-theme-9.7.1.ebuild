@@ -1,7 +1,7 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit gnome2-utils
 
@@ -34,7 +34,7 @@ src_prepare() {
 
 src_install() {
 	insinto /usr/share/icons
-	doins -r Surfn{,-Arc,-Arch-Blue,-Arched,-Breeze-Dark,-Evopop,-Luv-Red,-Luv,-Majestic,-Mint-X-Grey,-Numix-Misty,-Numix-Polo,-Numix,-Orange,-Papirus-Blue,-Papirus-Grey,-Vertexed} || die
+	doins -r surfn-icons/Surfn{,-Arc,-Arch-Blue,-Arched,-Breeze-Dark,-Evopop,-Luv-Red,-Luv,-Majestic,-Mint-X-Grey,-Numix-Misty,-Numix-Polo,-Numix,-Orange,-Papirus-Blue,-Papirus-Grey,-Vertexed} || die
 
 }
 
