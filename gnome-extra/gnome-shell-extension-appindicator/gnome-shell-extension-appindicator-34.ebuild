@@ -11,13 +11,13 @@ SRC_URI="https://github.com/ubuntu/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-3.37
+	>=gnome-base/gnome-shell-3.36
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND="
