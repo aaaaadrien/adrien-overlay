@@ -21,7 +21,11 @@ COMMON_DEPEND="
 	${PYTHON_DEPS}
 	>=x11-libs/xapps-1.4.0
 	media-video/mpv
+	dev-python/setproctitle
+	dev-python/imdbpy
 "
+# dev-python/imdbpy dependance a rétroporter
+
 RDEPEND="${COMMON_DEPEND}
 	$(python_gen_cond_dep '
 		dev-python/polib[${PYTHON_USEDEP}]
