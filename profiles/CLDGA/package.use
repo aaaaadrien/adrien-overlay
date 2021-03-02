@@ -7,6 +7,9 @@ gnome-base/librsvg vala
 x11-libs/gtksourceview vala
 app-crypt/libsecret vala
 
+# Extra by Adrien
+x11-wm/mutter screencast
+
 #gnome-base/gdm elogind
 #gnome-base/gnome-settings-daemon elogind
 #gnome-base/gnome-control-center elogind
