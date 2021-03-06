@@ -11,10 +11,11 @@ SRC_URI="https://github.com/miguelmota/cointop/archive/v${PV}.tar.gz -> ${P}.tar
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 src_compile() {
+	ewarn "Need to enable FEATURES=-network-sandbox"
 	export -n GOCACHE XDG_CACHE_HOME
 	go build -o bin/cointop main.go || die "build failed"
 }
