@@ -9,6 +9,7 @@ app-crypt/libsecret vala
 
 # Extra by Adrien
 x11-wm/mutter screencast
+gnome-extra/evolution-data-server oauth
 
 #gnome-base/gdm elogind
 #gnome-base/gnome-settings-daemon elogind
