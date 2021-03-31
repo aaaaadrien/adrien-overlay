@@ -10,6 +10,7 @@
 # AMD64 Profiles
 amd64		CLDGA/amd64/20					stable
 amd64		CLDGAT/amd64/20					exp
+amd64		CLRCD/amd64/20					stable
 
 # x86 Profiles
 x86		CLDGA/x86/20					exp
