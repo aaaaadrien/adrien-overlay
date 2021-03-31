@@ -1,0 +1,2 @@
+USE="-consolekit elogind"
+THEMES="CLS"
