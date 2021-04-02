@@ -1,2 +1,2 @@
 # Calculate
-sys-apps/calculate-utils -client -backup -desktop -install -qt5 
+sys-apps/calculate-utils -client -backup -desktop -qt5 
