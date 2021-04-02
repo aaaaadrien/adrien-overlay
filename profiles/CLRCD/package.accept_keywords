@@ -1,1 +1,4 @@
 app-crypt/nwipe
+sys-fs/aufs-util
+sys-fs/aufs-headers
+
