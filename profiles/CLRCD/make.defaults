@@ -1,2 +1,3 @@
 USE="-consolekit elogind"
-THEMES="CLS"
+THEMES="CLDX"
+LIGHTDM_SESSION=xfce
