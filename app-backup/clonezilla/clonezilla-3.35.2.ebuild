@@ -9,7 +9,7 @@ SRC_URI="https://free.nchc.org.tw/drbl-core/src/stable/clonezilla-${PV}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="*amd64 *x86"
 
 DEPEND="app-backup/drbl
 		sys-block/partclone"
