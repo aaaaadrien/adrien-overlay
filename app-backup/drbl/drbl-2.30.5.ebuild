@@ -9,7 +9,7 @@ SRC_URI="http://free.nchc.org.tw/drbl-core/src/stable/drbl-${PV}.tar.xz"
 
 LICENSE="GPL3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="*amd64 *x86"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
