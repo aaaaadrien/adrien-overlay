@@ -6,11 +6,9 @@ inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}"
 DESCRIPTION="A dock for the Gnome Shell."
-HOMEPAGE="https://github.com/ewlsh/${MY_PN}/"
-#SRC_URI="https://github.com/ewlsh/${MY_PN}/archive/extensions.gnome.org-v${PV}.tar.gz -> ${P}.tar.gz"
-
-MY_COMMIT="a2d40e2a06117617bcbc5f85608c895c7734604e"
-SRC_URI="https://github.com/ewlsh/${MY_PN}/tarball/${MY_COMMIT} -> ${P}.tar.gz"
+HOMEPAGE="https://github.com/micheleg/${MY_PN}/"
+#SRC_URI="https://github.com/micheleg/${MY_PN}/archive/extensions.gnome.org-v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/aaaaadrien/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -28,7 +26,7 @@ BDEPEND="
 	sys-devel/gettext
 "
 
-S="${WORKDIR}/dash-to-dock-extensions.gnome.org-v$PV"
+S="${WORKDIR}/ewlsh-dash-to-dock-a2d40e2"
 src_prepare() {
 	default
 	# Set correct version
