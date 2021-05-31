@@ -26,7 +26,8 @@ BDEPEND="
 	sys-devel/gettext
 "
 
-S="${WORKDIR}/ewlsh-dash-to-dock-a2d40e2"
+S="${WORKDIR}/${MY_PN}-${PV}"
+
 src_prepare() {
 	default
 	# Set correct version
