@@ -56,4 +56,5 @@ DOCS=( README.md NEWS )
 python_install_all() {
 	distutils-r1_python_install_all
 	rm -vR "${D}"/usr/share/doc/"${PN}"
+	rm -v "${D}"/usr/share/glib-2.0/schemas/gschemas.compiled
 }
