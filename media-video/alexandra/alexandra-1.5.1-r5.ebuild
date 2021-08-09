@@ -6,7 +6,7 @@ EAPI=7
 
 #PLOCALES="cs de fr"
 
-inherit qmake-utils l10n
+inherit qmake-utils plocale desktop
 
 DESCRIPTION="Small, fast, but powerful video library, written in C++ with Qt5."
 HOMEPAGE="https://github.com/eugene-melnik/alexandra"
