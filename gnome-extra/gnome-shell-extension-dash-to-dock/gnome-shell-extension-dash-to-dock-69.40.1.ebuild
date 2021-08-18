@@ -12,7 +12,7 @@ SRC_URI="https://github.com/aaaaadrien/${MY_PN}/archive/refs/tags/v${PV}.tar.gz 
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
