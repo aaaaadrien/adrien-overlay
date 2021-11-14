@@ -14,7 +14,7 @@ SRC_URI="https://repo.steampowered.com/steam/archive/stable/steam_${PV}.tar.gz"
 
 LICENSE="ValveSteamLicense MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="amd64 ~x86"
 IUSE="+joystick +steamruntime +udev"
 RESTRICT="bindist mirror test"
 
