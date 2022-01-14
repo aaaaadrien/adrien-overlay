@@ -44,7 +44,7 @@ src_install() {
 	insinto /usr/share/locale
 	doins -r locale/*
 	insinto /usr/share/glib-2.0/schemas
-	doins /usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
+	doins schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
 }
 
 pkg_preinst() {
