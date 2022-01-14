@@ -43,6 +43,8 @@ src_install() {
 	doins -r *.js{,on} *.ui *.css
 	insinto /usr/share/locale
 	doins -r locale/*
+	insinto /usr/share/glib-2.0/schemas
+	doins /usr/share/glib-2.0/schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
 }
 
 pkg_preinst() {
