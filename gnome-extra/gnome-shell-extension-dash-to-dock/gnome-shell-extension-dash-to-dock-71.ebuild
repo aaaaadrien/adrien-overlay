@@ -11,7 +11,7 @@ SRC_URI="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.co
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
