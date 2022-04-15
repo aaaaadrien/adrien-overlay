@@ -1,0 +1,17 @@
+--- gnome-shell-extension-dash-to-dock-71.42/metadata.json.ori	2021-10-24 20:23:26.000000000 +0200
++++ gnome-shell-extension-dash-to-dock-71.42/metadata.json	2022-04-15 21:07:22.787043270 +0200
+@@ -6,9 +6,10 @@
+   "original-author": "micxgx@gmail.com",
+   "shell-version": [
+     "40",
+-    "41"
++    "41",
++    "42"
+   ],
+   "url": "https://micheleg.github.io/dash-to-dock/",
+   "uuid": "dash-to-dock@micxgx.gmail.com",
+   "version": 71
+-}
+\ Pas de fin de ligne à la fin du fichier
++}
+
