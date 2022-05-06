@@ -71,7 +71,7 @@ gui-libs/tepl
 <mail-client/evolution-43
 <gnome-extra/gnome-system-monitor-43
 #media-libs/gegl
-<x11-libs/vte-0.60.5
+<x11-libs/vte-0.69.0
 <net-wireless/gnome-bluetooth-43
 <gnome-extra/gnome-calendar-43
 <games-puzzle/lightsoff-43
@@ -87,9 +87,11 @@ gui-libs/tepl
 <gui-libs/libadwaita-1.1.99
 <app-i18n/ibus-1.5.30
 <dev-libs/libportal-0.8
-<gtk-libs/gtksourceview-5.5
+<gui-libs/gtksourceview-5.5
+<net-libs/libnma-1.8.39
+<media-libs/gexiv2-0.15.0
 
-#dev-lang/vala
+<dev-lang/vala-0.57
 <dev-libs/vala-common-0.57
 
 <net-misc/gnome-online-miners-43
