@@ -56,7 +56,7 @@ gui-libs/libhandy
 <gnome-extra/gnome-tweaks-43
 <gnome-base/gnome-session-43
 <games-puzzle/swell-foop-43
-<dev-libs/gjs-1.67
+<dev-libs/gjs-1.73
 #media-libs/babl
 <app-text/evince-43
 <sys-apps/baobab-43
@@ -84,9 +84,13 @@ gui-libs/tepl
 <gnome-base/gnome-extra-apps-43
 <gnome-base/gnome-keyring-43
 <dev-util/sysprof-capture-43
+<gui-libs/libadwaita-1.1.99
+<app-i18n/ibus-1.5.30
+<dev-libs/libportal-0.8
+<gtk-libs/gtksourceview-5.5
 
 #dev-lang/vala
-#dev-libs/vala-common
+<dev-libs/vala-common-0.57
 
 <net-misc/gnome-online-miners-43
 #dev-libs/folks
