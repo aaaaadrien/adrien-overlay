@@ -44,7 +44,7 @@ src_prepare() {
 #}
 
 src_install() {
-	insinto /usr/share/gnome-shell/extensions/
+	insinto /usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
 	doins -r *.js{,on} *.ui *.css
 	insinto /usr/share/locale
 	doins -r locale/*
