@@ -25,6 +25,7 @@ DEPEND="${COMMON_DEPEND}"
 BDEPEND="
 	dev-util/intltool
 	sys-devel/gettext
+	dev-lang/sassc
 "
 
 S="${WORKDIR}/dash-to-dock-004f257c3dea5f1851dadd753be87afc555b3dfb/"
