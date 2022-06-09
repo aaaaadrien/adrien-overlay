@@ -6,8 +6,8 @@ inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}"
 DESCRIPTION="A dock for the Gnome Shell."
-HOMEPAGE="https://github.com/micheleg/${MY_PN}/"
-SRC_URI="https://github.com/micheleg/${MY_PN}/archive/extensions.gnome.org-v${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="https://micheleg.github.io/dash-to-dock/"
+SRC_URI="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v${PV}.shell-extension.zip -> ${P}.zip"
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -17,7 +17,7 @@ IUSE=""
 COMMON_DEPEND="dev-libs/glib:2"
 RDEPEND="${COMMON_DEPEND}
 	app-eselect/eselect-gnome-shell-extensions
-	>=gnome-base/gnome-shell-3.35.0
+	>=gnome-base/gnome-shell-40
 "
 DEPEND="${COMMON_DEPEND}"
 BDEPEND="
@@ -25,12 +25,26 @@ BDEPEND="
 	sys-devel/gettext
 "
 
-S="${WORKDIR}/dash-to-dock-extensions.gnome.org-v${PV}"
+S="${WORKDIR}"
 
 src_prepare() {
 	default
 	# Set correct version
 	export VERSION="${PV}"
+}
+
+#src_compile() {
+#:;
+#}
+
+src_install() {
+	local uu=$(awk -F'"' '/uuid/ {print $4}' metadata.json)
+	insinto /usr/share/gnome-shell/extensions/${uu}
+	doins -r *.js{,on} *.ui *.css
+	insinto /usr/share/locale
+	doins -r locale/*
+	insinto /usr/share/glib-2.0/schemas
+	doins schemas/org.gnome.shell.extensions.dash-to-dock.gschema.xml
 }
 
 pkg_preinst() {
