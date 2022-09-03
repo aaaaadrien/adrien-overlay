@@ -17,7 +17,7 @@ SRC_URI="https://github.com/Swordfish90/cool-retro-term/archive/${PV}.tar.gz -> 
 
 LICENSE="GPL-2 GPL-3"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 
 DEPEND="
 	dev-qt/qtdeclarative:5[localstorage]
