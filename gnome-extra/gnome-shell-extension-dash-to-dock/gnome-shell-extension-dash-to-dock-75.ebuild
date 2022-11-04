@@ -12,7 +12,7 @@ SRC_URI="https://github.com/aaaaadrien/adrien-overlay/raw/master/gnome-extra/gno
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="**amd64"
 IUSE=""
 
 COMMON_DEPEND="dev-libs/glib:2"
