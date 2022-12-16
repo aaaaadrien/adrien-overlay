@@ -43,7 +43,7 @@ src_install() {
 			telegram.png
 	done
 
-	domenu "${WORKDIR}/tdesktop-${PV}"/lib/xdg/telegramdesktop.desktop
+	domenu "${WORKDIR}/tdesktop-${PV}"/lib/xdg/org.telegram.desktop.desktop
 }
 
 pkg_postinst() {
