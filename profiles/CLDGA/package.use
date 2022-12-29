@@ -11,23 +11,7 @@ app-crypt/libsecret vala
 x11-wm/mutter screencast
 gnome-extra/evolution-data-server oauth
 
-#gnome-base/gdm elogind
-#gnome-base/gnome-settings-daemon elogind
-#gnome-base/gnome-control-center elogind
-#gnome-base/gnome-shell elogind
-#gnome-base/gnome-session elogind
-#x11-wm/mutter elogind
-#gnome-base/gvfs elogind
-
-#Elogind
-#sys-fs/udisks elogind
-#net-misc/networkmanager -consolekit -elogind
-#sys-apps/dbus elogind
-#sys-process/procps elogind
-#media-sound/pulseaudio elogind
-#sys-apps/accountsservice elogind -consolekit
-#sys-auth/pambase elogind
-#sys-auth/polkit -elogind consolekit
+media-libs/libcanberra sound
 sys-auth/polkit gtk elogind -consolekit
 
 # GNOME without games by default
