@@ -13,7 +13,6 @@ gnome-extra/evolution-data-server oauth
 
 media-libs/libcanberra sound
 sys-auth/polkit gtk elogind -consolekit
-dev-python/sphinx -latex
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
