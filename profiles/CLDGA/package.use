@@ -11,8 +11,10 @@ app-crypt/libsecret vala
 x11-wm/mutter screencast
 gnome-extra/evolution-data-server oauth
 
+# Corrections
 media-libs/libcanberra sound
 sys-auth/polkit gtk elogind -consolekit
+sys-fs/btrfs-progs -man
 
 # GNOME without games by default
 gnome-base/gnome-extra-apps -games
