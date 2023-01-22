@@ -12,6 +12,12 @@ then
 
 	#Theme
 	gsettings set org.gnome.desktop.interface gtk-theme "Calculate"
+	
+	#Curseur
+	gsettings set org.gnome.desktop.interface cursor-theme "Adwaita"
+
+	#Icones
+	gsettings set org.gnome.desktop.interface icon-theme "Adwaita"
 
 	# Window buttons
 	gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
