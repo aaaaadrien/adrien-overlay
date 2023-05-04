@@ -6,8 +6,9 @@ inherit gnome2-utils
 
 MY_PN="${PN/gnome-shell-extension-/}"
 DESCRIPTION="A dock for the Gnome Shell."
-HOMEPAGE="https://micheleg.github.io/dash-to-dock/"
-SRC_URI="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v${PV}.shell-extension.zip -> ${P}.zip"
+HOMEPAGE="https://extensions.gnome.org/extension/307/dash-to-dock/"
+#SRC_URI="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v${PV}.shell-extension.zip -> ${P}.zip"
+SRC_URI="https://github.com/aaaaadrien/adrien-overlay/raw/master/gnome-extra/gnome-shell-extension-dash-to-dock/files/dash-to-dockmicxgx.gmail.com.v${PV}.shell-extension.zip -> ${P}.zip"
 
 LICENSE="GPL-2+"
 SLOT="0"
