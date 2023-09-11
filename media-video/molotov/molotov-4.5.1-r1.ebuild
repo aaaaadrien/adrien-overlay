@@ -1,13 +1,13 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit eutils desktop
+inherit desktop
 
 DESCRIPTION="Nous allons vous faire adorer la tele !"
 HOMEPAGE="https://www.molotov.tv"
-SRC_URI="http://desktop-auto-upgrade.molotov.tv/linux/Molotov-${PV}.AppImage -> ${PN}-${PV}.AppImage"
+SRC_URI="http://desktop-auto-upgrade.molotov.tv/linux/Molotov-${PV}.AppImage"
 
 LICENSE="molotov"
 SLOT="0"
@@ -17,23 +17,15 @@ QA_PREBUILT="opt/molotov/molotov"
 
 IUSE=""
 
-DEPEND=""
+DEPEND="sys-fs/fuse"
 RDEPEND="${DEPEND}"
 
-src_unpack() {
-# On dépack pas c'est un appimage
-echo ${A}
-echo ${S}
-mkdir ${WORKDIR}/${P}
+S=${WORKDIR}
+
+src_prepare() {
+	cp "${DISTDIR}/Molotov-${PV}.AppImage" "${WORKDIR}/molotov"
+	eapply_user
 }
-
-#src_prepare() {
-#echo 1
-#}
-
-#src_compile() {
-#echo 2
-#}
 
 src_install() {
 # C'est pas très propre
