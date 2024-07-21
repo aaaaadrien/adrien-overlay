@@ -1,12 +1,12 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-inherit gnome2-utils
+inherit xdg-utils
 
 DESCRIPTION="A colourful icon theme for linux desktops"
-MY_PV="${PV}-02"
+MY_PV="${PV}-01"
 
 HOMEPAGE="https://github.com/erikdubois/Surfn"
 SRC_URI="https://github.com/erikdubois/Surfn/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
@@ -31,6 +31,6 @@ src_install() {
 
 }
 
-pkg_preinst() { gnome2_icon_savelist; }
-pkg_postinst() { gnome2_icon_cache_update; }
-pkg_postrm() { gnome2_icon_cache_update; }
+pkg_preinst() { xdg_icon_savelist; }
+pkg_postinst() { xdg_icon_cache_update; }
+pkg_postrm() { xdg_icon_cache_update; }

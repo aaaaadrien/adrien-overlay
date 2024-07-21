@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit gnome2-utils
+inherit xdg-utils
 
 MY_PN="${PN/gnome-shell-extension-/}"
 DESCRIPTION="A dock for the Gnome Shell."
@@ -50,16 +50,16 @@ src_install() {
 }
 
 pkg_preinst() {
-	gnome2_schemas_savelist
+	xdg_schemas_savelist
 }
 
 pkg_postinst() {
-	gnome2_schemas_update
+	xdg_schemas_update
 	ebegin "Updating list of installed extensions"
 	eselect gnome-shell-extensions update
 	eend $?
 }
 
 pkg_postrm() {
-	gnome2_schemas_update
+	xdg_schemas_update
 }

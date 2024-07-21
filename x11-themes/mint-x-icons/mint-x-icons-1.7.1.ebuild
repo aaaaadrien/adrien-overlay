@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: 
 
-EAPI="6"
+EAPI="8"
 
-inherit gnome2-utils
+inherit xdg-utils
 
 DESCRIPTION="Mint-X Icon themes"
 HOMEPAGE="http://packages.linuxmint.com/pool/main/m/mint-x-icons/"
@@ -32,6 +32,6 @@ src_install() {
 	dodoc mint-x-icons/debian/changelog  mint-x-icons/debian/copyright
 }
 
-pkg_preinst() { gnome2_icon_savelist; }
-pkg_postinst() { gnome2_icon_cache_update; }
-pkg_postrm() { gnome2_icon_cache_update; }
+pkg_preinst() { xdg_icon_savelist; }
+pkg_postinst() { xdg_icon_cache_update; }
+pkg_postrm() { xdg_icon_cache_update; }

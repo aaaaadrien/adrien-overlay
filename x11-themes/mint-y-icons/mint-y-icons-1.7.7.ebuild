@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: 
 
-EAPI="6"
+EAPI="8"
 
-inherit gnome2-utils
+inherit xdg-utils
 
 DESCRIPTION="Mint-Y Icon themes"
 HOMEPAGE="http://packages.linuxmint.com/pool/main/m/mint-y-icons/"
@@ -27,11 +27,11 @@ src_prepare() {
 
 src_install() {
 	insinto /usr/share/icons
-	doins -r mint-y-icons/usr/share/icons/Mint-Y{,-Aqua,-Blue,-Brown,-Grey,-Orange,-Pink,-Purple,-Red,-Sand,-Teal} || die
+	doins -r mint-y-icons/usr/share/icons/Mint-Y{,-Aqua,-Blue,-Cyan,-Grey,-Navy,-Orange,-Pink,-Purple,-Red,-Sand,-Teal,-Yaru} || die
 
 	dodoc mint-y-icons/debian/changelog  mint-y-icons/debian/copyright
 }
 
-pkg_preinst() { gnome2_icon_savelist; }
-pkg_postinst() { gnome2_icon_cache_update; }
-pkg_postrm() { gnome2_icon_cache_update; }
+pkg_preinst() { xdg_icon_savelist; }
+pkg_postinst() { xdg_icon_cache_update; }
+pkg_postrm() { xdg_icon_cache_update; }

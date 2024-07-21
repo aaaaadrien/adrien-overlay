@@ -2,9 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{11..13} )
 
-inherit gnome.org gnome2-utils meson python-single-r1 xdg
+inherit gnome.org xdg-utils meson python-single-r1 xdg
 
 DESCRIPTION="Customize advanced GNOME options"
 HOMEPAGE="https://wiki.gnome.org/Apps/Tweaks"
@@ -13,7 +13,7 @@ LICENSE="GPL-3+ CC0-1.0"
 SLOT="0"
 
 # FIX AD
-SRC_URI="https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/42.beta/gnome-tweaks-42.beta.tar.bz2"
+SRC_URI="https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/${PV}/gnome-tweaks-${PV}.tar.bz2"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -35,7 +35,7 @@ RDEPEND="${DEPEND}
 	x11-libs/libnotify[introspection]
 
 	>=gnome-base/gsettings-desktop-schemas-40.0
-	>=gnome-base/gnome-shell-3.24
+	>=gnome-base/gnome-shell-45.0
 	x11-wm/mutter
 "
 BDEPEND=">=sys-devel/gettext-0.19.8"
@@ -45,7 +45,7 @@ PATCHES=(
 )
 
 # FIX AD
-S="${WORKDIR}/gnome-tweaks-42.beta"
+#S="${WORKDIR}/gnome-tweaks-42.beta"
 
 src_install() {
 	meson_src_install
@@ -55,10 +55,10 @@ src_install() {
 
 pkg_postinst() {
 	xdg_pkg_postinst
-	gnome2_schemas_update
+	xdg_schemas_update
 }
 
 pkg_postrm() {
 	xdg_pkg_postrm
-	gnome2_schemas_update
+	xdg_schemas_update
 }

@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-inherit eutils
+inherit xdg-utils desktop
 
 
 DESCRIPTION="PAckage MAnager for GEntoo LInux (and Calculate Linux)"
@@ -32,7 +32,7 @@ RDEPEND="${DEPEND}"
 
 src_compile()
 {
-    return
+	return
 }
 
 src_install() {
