@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Package to install files for CLDG ISO (from CLS) by Adrien.D"
 HOMEPAGE="http://www.linuxtricks.fr"
